@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://getbootstrap.com/examples/navbar-fixed-top/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>Register</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/navbar-fixed-top/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div>Test register</div>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://getbootstrap.com/examples/navbar-fixed-top/#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">Home</a></li>
+            <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#about">About</a></li>
+            <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="http://getbootstrap.com/examples/navbar-fixed-top/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">Action</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">Another action</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">Separated link</a></li>
+                <li><a href="http://getbootstrap.com/examples/navbar-fixed-top/#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://getbootstrap.com/examples/navbar/">Default</a></li>
+            <li><a href="http://getbootstrap.com/examples/navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./index_files/index.html">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+
+<div id="take-action-div">
+    <div class="action-steps step-type-1">
+        <div class="circle-base ctype-1 step-icon">
+            <img src="../../assets/sign.png">
+        </div>
+        <div class="step-content">
+            <h3>簽署「器官捐贈同意卡」</h3>
+            <p>
+                表達器官捐贈意願，實務上尚無法條保障，也就是說，你的親屬可能拒絕醫生捐贈你的器官
+            </p>
+        </div>
+        <!-- <p class="load-more">立刻簽署&nbsp;&nbsp; -->
+        <a href="" class="scroller-arrow"></a>
+
+    </div>
+    <div class="action-steps step-type-2">
+        <div class="circle-base ctype-1 step-icon">
+            <img src="../../assets/register.png">
+        </div>
+        <div class="step-content">
+            <h3>登錄於「健保IC卡」</h3>
+            <p>
+                將「器官捐贈意願」加註於全民健康保險憑證(健保IC卡)，此為「具法律效力之同意」，與私下意願的表達全然不同 <br>
+                請務必閱讀
+                <a href="http://www.organ.org.tw/">此說明</a>
+            </p>
+        </div>
+        <a href="" class="scroller-arrow"></a>
+    </div>
+    <div class="action-steps step-type-3">
+        <div class="circle-base ctype-1 step-icon">
+            <img src="../../assets/conversation.png">
+        </div>
+        <div class="step-content">
+            <h3>與最親愛的家人溝通</h3>
+            <p>
+            </p>
+        </div>
+        <a href="" class="scroller-arrow"></a>
+    </div>
+</div>
+
+<%= form_for :article do |f| %>
+  <p>
+    <%= f.label :姓名 %><br>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :器捐同意卡卡號 %><br>
+    <%= f.text_field :cardno, :placeholder => "新申請者免填" %>
+  </p>
+  <p>
+    <%= f.label :生日 %><br>
+    <%= f.text_field :birthdate, :placeholder => "yyyy/mm/dd" %>
+  </p>
+  <p>
+    <%= f.label :身分證字號 %><br>
+    <%= f.text_field :idno %>
+  </p>
+  <p>
+    <%= f.label :聯絡電話 %><br>
+    <%= f.text_field :tel %>
+  </p>
+  <p>
+    <%= f.label :地址 %><br>
+    <%= f.text_field :address %>
+  </p>
+  <!-- <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ -->
+  <p>
+    <%= f.submit :value => "送出", :class => "btn"%>
+  </p>
+<% end %>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="./index_files/jquery.min.js"></script> -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="./index_files/bootstrap.min.js"></script> -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+</body></html>
