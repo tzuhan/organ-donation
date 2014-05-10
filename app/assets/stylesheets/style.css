@@ -2179,25 +2179,7 @@ header .fa.circled {
 /* Side-Bar                                                                        */
 
 /*********************************************************************************/
- #scroll-icons {
-    background: #fff;
-    position: fixed;
-    text-align: center;
-    top: 0%;
-    right: 0%;
-    width: 200px;
-    height: 100%;
-    z-index: 1000;
-    opacity: 0.7;
-    padding: 20px;
-}
-#scroll-icons .circle {
-    border-radius: 50%;
-    margin: 10px;
-    width: 120px;
-    height: 120px;
-    /* width and height can be anything, as long as they're equal */
-}
+ 
 /*********************************************************************************/
 
 /* Content                                                                       */
@@ -2210,7 +2192,7 @@ header .fa.circled {
 		background-color: transparent;
 		height: 40%;
 		z-index: 1001;
-		right: 20px;
+		right: 50px;
 		left: auto;
 		position: fixed;
 		top: 35%;
