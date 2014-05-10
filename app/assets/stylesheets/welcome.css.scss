@@ -61,6 +61,25 @@
 .step-content p {
     font-size: 12px;
 }
+.load-more {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.scroller-arrow {
+    width: 43px;
+    height: 43px;
+    background-image: url(arrow-big.png);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.step-type-1 form {
+    display: none;
+}
 
 /* from bootstrap */
 .bs-callout {
