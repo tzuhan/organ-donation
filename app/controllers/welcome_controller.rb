@@ -9,7 +9,7 @@ class WelcomeController < ApplicationController
         puts ('register log~~')
         puts (params[:article])
         @userdata = params[:article]
-        puts (UserMailer.welcome_email())
-        UserMailer.welcome_email().deliver
+        puts (UserMailer.welcome_email(@userdata))
+        UserMailer.welcome_email(@userdata).deliver
     end
 end
