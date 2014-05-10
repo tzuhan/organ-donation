@@ -11,13 +11,13 @@
  * 
  *= require ie8
  *= require skel-noscript
- *= require style
  *= require style-mobile
  *= require style-narrow
  *= require style-narrower
  *= require style-normal
  *= require style-noscript
  *= require style-wide
+ *= require style
  *= require_self
  *= require_tree .
  */

@@ -82,13 +82,17 @@
 }
 
 .reg-form {
+    width: 800px;
     margin: 20px auto;
-    text-align: center;
+    padding: 50px;
     border-radius: 10px;
+    background-color: #cdcdcd;
 }
 
 form p {
+    margin: 20px auto;
     font-size: 1.2em;
+    text-align: center;
 }
 
 /* from bootstrap */
