@@ -1,5 +1,7 @@
 class WelcomeController < ApplicationController
     def index
+        puts ('why')
+        puts (params[:article])
     end
 
     def reg
@@ -14,7 +16,7 @@ class WelcomeController < ApplicationController
 
         @userdata = params[:article]
         # puts (UserMailer.welcome_email(@userdata))
-        #UserMailer.welcome_email(@userdata).deliver
+        UserMailer.welcome_email(@userdata).deliver
     end
 
     def send_mail
