@@ -58,10 +58,12 @@
     text-align: left;
 }
 .step-content h3 {
+    margin: 10px 0;
+    font-size: 1.7em;
     font-weight: bold;
 }
-.step-content p {
-    font-size: 12px;
+.action-steps .step-content p {
+    font-size: 1.2em;
 }
 .load-more {
     cursor: pointer;
@@ -79,8 +81,14 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.step-type-1 form {
-    display: none;
+.reg-form {
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+form p {
+    font-size: 1.2em;
 }
 
 /* from bootstrap */
