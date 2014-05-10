@@ -12,6 +12,96 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+
+.section{
+  position: relative;
+  margin: 40px;
+  width: 1200px;
+  height: 620px;
+  text-align: center;
+  font-family: 'Andale Mono', arial, sans-serif;
+  background-color:#FFF0E6;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.section hgroup{
+
+  position:relative;
+  background-color:#FFF0E6;
+  display: block;
+	height:300px;
+  margin: 0 auto 80px auto;
+  padding-bottom: 15px;
+}
+
+.section h1, .section h2, .section h3, .section strong{
+  font-weight: normal;
+}
+
+.section h1{
+	font-family:"MStiffHeiHK-UltraBold";
+}
+
+.section h1{
+  font-size: 40px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.section h2, .section h3{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+  font-size: 18px;
+  width:700px;
+}
+
+.section strong{
+  color: #ff7d23;
+}
+
+button{
+  display: block;
+  position: absolute;
+  top:530px;
+  left:480px;
+  outline: 6px solid #dddddd;
+  font-size: 18px;
+  color: #fcb509;
+  border: none;
+  background: #ffffff;
+  background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 50%,#ffffff 51%,#ffffff 100%);
+  padding: 13px 60px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+button:hover{
+    outline: 6px solid #fcb509;
+    color: #000;
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(51%,#FFF4DE), color-stop(51%,#FFF4DE), color-stop(100%,#ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: linear-gradient(104deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#FFF4DE',GradientType=1 ); 
+}
+
+
+
+
+
+
 	body.paused *
 	{
 		-moz-transition: none;
@@ -58,6 +148,7 @@
 	{
 		font-size: 2.85em;
 	}
+	
 	
 	h3
 	{
