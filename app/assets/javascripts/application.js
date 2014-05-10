@@ -11,6 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require index
 //= require jquery.min
 //= require jquery.dropotron.min
 //= require skel.min

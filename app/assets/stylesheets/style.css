@@ -11,15 +11,19 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
-
+	.icon{
+		margin: 50px;
+		
+	}
 	.section{
   position: relative;
-  margin: 40px;
-  width: 1200px;
-  height: 620px;
+  margin: 75px 0px;
+  width: 100%;
+  height: 520px;
   text-align: center;
   font-family: 'Andale Mono', arial, sans-serif;
-  background-color:#FFF0E6;
+  background-color:#63CFD4;
+  color: #0C6F73;
   line-height: 24px;
   border: 1px solid #ddd;
   -webkit-box-sizing: border-box;
@@ -31,7 +35,7 @@
 .section hgroup{
 
   position:relative;
-  background-color:#FFF0E6;
+  color: #3D3B42;
   display: block;
 	height:300px;
   margin: 0 auto 80px auto;
@@ -62,14 +66,15 @@
 }
 
 .section strong{
-  color: #ff7d23;
+  color: #F21E52;
 }
 
 button{
   display: block;
   position: absolute;
   top:530px;
-  left:480px;
+  left: 50%;
+  margin: 0px -100px;
   outline: 6px solid #dddddd;
   font-size: 18px;
   color: #fcb509;
@@ -1407,22 +1412,38 @@ button:hover{
 /* Side-Bar                                                                        */
 /*********************************************************************************/
 	#scroll-icons{
-		background: #fff;
-	    position: fixed;
-	    text-align: center;
-	    top: 0%;
-	    right: 0%;
-	    width: 200px;
-	    height: 100%;
-	    z-index: 1000;
-		opacity: 0.7;
-		padding: 20px;
+		background-color: transparent;
+		height: 40%;
+		z-index: 1001;
+		right: 20px;
+		left: auto;
+		position: fixed;
+		top: 35%;
+
 	}
-	#scroll-icons .circle{
-		border-radius: 　50%; 
-		margin: 10px;
-		width: 120px;
-		height: 120px;
+	.scroll-circle{ 
+		/*unclick, go transparent*/
+		width: 7px;
+		height: 7px;
+		border-radius: 7px;
+		border: 1px solid;
+		border-color: #666366;
+		background-color: transparent;
+		margin-bottom: 200%;
+		cursor: pointer;
+		
+		/* width and height can be anything, as long as they're equal */
+	}
+	.clicked{ 
+		/*clickedblacken*/
+		width: 7px;
+		height: 7px;
+		border-radius: 7px;
+		border: 1px solid;
+		border-color: #666366;
+		background-color: rgb(102, 99, 102);
+		margin-bottom: 200%;
+		cursor: pointer;
 		
 		/* width and height can be anything, as long as they're equal */
 	}
