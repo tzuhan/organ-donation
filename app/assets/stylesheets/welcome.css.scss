@@ -1,3 +1,96 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.action-steps {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #ccc;
+    text-align: center;
+}
+.action-steps > * {
+    vertical-align: middle;
+}
+.step-type-1 {
+    background-color: #dff0d8;
+}
+.step-type-2 {
+    background-color: #fcf8e3;
+}
+.step-type-3 {
+    background-color: #f2dede;
+}
+
+.circle-base {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.ctype-1 {
+    width: 90px;
+    height: 90px;
+    background: #ccc;
+}
+
+.step-icon {
+    display: inline-block;
+    /*float: left;*/
+    text-align: center;
+    font-size: 3em;
+    line-height: 90px;
+}
+.step-icon img {
+    position: relative;
+}
+.action-steps:nth-child(1) img {
+    top: -6px;
+    left: 0px;
+}
+.action-steps:nth-child(3) img {
+    left: -2px;
+}
+.step-content {
+    margin: 0 20px;
+    width: 800px;
+    display: inline-block;
+    text-align: left;
+}
+.step-content h3 {
+    font-weight: bold;
+}
+.step-content p {
+    font-size: 12px;
+}
+
+/* from bootstrap */
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+.bs-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+

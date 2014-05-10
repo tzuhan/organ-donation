@@ -4,12 +4,16 @@ class WelcomeController < ApplicationController
     end
 
     def reg
-        require 'json'
+        #require 'json'
         # render plain: params[:article].inspect
         puts ('register log~~')
         puts (params[:article])
+    end
+
+    def send_reg
         @userdata = params[:article]
-        puts (UserMailer.welcome_email(@userdata))
+        # puts (UserMailer.welcome_email(@userdata))
         UserMailer.welcome_email(@userdata).deliver
     end
+
 end
