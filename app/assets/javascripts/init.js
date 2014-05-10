@@ -165,7 +165,15 @@
 				};
 
 		})();
-
+		
+$("#banner").scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+        $(this).fadeIn();
+    } else {
+        $(this).fadeOut();
+    }
+});
 // Ready stuff
 	jQuery(function() {
 

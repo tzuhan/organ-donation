@@ -58,6 +58,7 @@ CcspFinal::Application.routes.draw do
 
     root :to  => "welcome#index"
     get "welcome" => "welcome#index"
+    get "story" => "story#index"
     # use say function in welcome controller
 
 end
