@@ -47,7 +47,7 @@
 	height:300px;
   margin: 0 auto 80px auto;
   padding-bottom: 15px;
-
+}
 
 /* Demo only styles*/
  a {
@@ -92,10 +92,9 @@
 
 button{
   display: block;
-  position: absolute;
-  top:530px;
-  left: 50%;
-  margin: 0px -100px;
+  position: relative;
+  top:-40px;
+  margin: 0px auto;
   outline: 6px solid #dddddd;
   font-size: 18px;
   color: #fcb509;
@@ -107,7 +106,7 @@ button{
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  cursor: pointer;
+  cursor: pointer;}
 
 .csstransforms3d .folding li:nth-child(even) {
     margin-top: -1px;
@@ -128,11 +127,11 @@ button{
     -o-transform-origin: 50% 0%;
     -ms-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
-    -webkit-transform: rotateX(-10deg);
-    -moz-transform: rotateX(-10deg);
-    -o-transform: rotateX(-10deg);
-    -ms-transform: rotateX(-10deg);
-    transform: rotateX(-10deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
 
 }
 .folding .fb {
@@ -160,11 +159,11 @@ button{
 }
 .csstransforms3d .folded li:nth-child(even) {
     margin-top: -75px;
-    -webkit-transform: rotateX(80deg);
-    -moz-transform: rotateX(80deg);
-    -o-transform: rotateX(80deg);
-    -ms-transform: rotateX(80deg);
-    transform: rotateX(80deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
     background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
     background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
@@ -183,8 +182,8 @@ button{
 }
 /* Folding list heading */
  .connect {
-    padding: 12px 0 12px 30px;
-    margin: 0 0 1px 0;
+    padding: 12px 0 12px 0px;
+    /*margin: 0 0 1px 0;*/
     color: #fff;
     border-left: 30px solid rgba(0, 0, 0, .2);
     cursor: pointer;
@@ -231,7 +230,7 @@ button{
 .section strong {
     color: #ff7d23;
 }
-button {
+/*button {
     display: block;
     position: absolute;
     top:530px;
@@ -248,7 +247,7 @@ button {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     cursor: pointer;
-}
+}*/
 button:hover {
     outline: 6px solid #fcb509;
     color: #000;
