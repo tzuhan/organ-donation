@@ -1,6 +1,9 @@
 class WelcomeController < ApplicationController
     def index
-        puts ('why')
+        if params[:article]
+            @userdata = params[:article]
+            UserMailer.welcome_email(@userdata).deliver
+        end
         puts (params[:article])
     end
 
