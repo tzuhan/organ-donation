@@ -86,15 +86,15 @@
 				<div class="reel">
 
 					<article>
-						<a href="http://mdomaradzki.deviantart.com/art/Bueller-III-351975087" class="image featured"><img src="../../assets/images/pic01.jpg" alt="" /></a>
+						<%= link_to image_tag("123.jpg", :alt=> "1st", :class =>"image featured"), :controller => 'welcome' %>
 						<header>
 							<h3><a href="#">Pulvinar sagittis congue</a></h3>
 						</header>
-						<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>							
+						<p></p>							
 					</article>
 				
 					<article>
-						<a href="http://mdomaradzki.deviantart.com/art/Disco-351602759" class="image featured"><img src="../../assets/images/pic02.jpg" alt="" /></a>
+						<%= link_to image_tag("pic2.jpg", :alt=> "2nd", :class =>"image featured"), :controller => 'welcome' %>
 						<header>
 							<h3><a href="#">Fermentum sagittis proin</a></h3>
 						</header>
@@ -102,7 +102,7 @@
 					</article>
 				
 					<article>
-						<a href="http://mdomaradzki.deviantart.com/art/The-Patina-of-Time-and-Tide-352128094" class="image featured"><img src="../../assets/images/pic03.jpg" alt="" /></a>
+						<a href="http://mdomaradzki.deviantart.com/art/The-Patina-of-Time-and-Tide-352128094" class="image featured"><%= image_tag("pic03.jpg", :alt=>"3rd") %></a>
 						<header>
 							<h3><a href="#">Sed quis rhoncus placerat</a></h3>
 						</header>

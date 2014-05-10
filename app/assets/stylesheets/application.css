@@ -10,13 +10,12 @@
  *
  * 
  * *= require_self
- * *= require backgroundsize.min
  * *= require ie8
  * *= require skel-noscript
  * *= require style
- * *= require style,mobile
+ * *= require style-mobile
  * *= require style-narrow
- * *= require style-narrorer
+ * *= require style-narrower
  * *= require style-normal
  * *= require style-noscript
  * *= require style-wide
