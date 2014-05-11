@@ -42,8 +42,8 @@ CcspFinal::Application.configure do
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'gmail.com',
-  user_name:            'wf870125@gmail.com',
-  password:             'r0gerFede2er!',
+  user_name:            'organntu@gmail.com',
+  password:             'organ.ntu',
   authentication:       'plain',
   enable_starttls_auto: true  }
 end

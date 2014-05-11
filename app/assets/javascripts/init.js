@@ -88,7 +88,7 @@
 // jQuery functions
 
 	// scrolly
-		jQuery.fn.n33_scrolly = function() {				
+		jQuery.fn.n33_scrolly = function() {
 			jQuery(this).click(function(e) {
 				var h = jQuery(this).attr('href'), target;
 
@@ -105,9 +105,9 @@
 		jQuery.n33_preloadImage = function(url, onload) {
 			var	$img = $('<img />'),
 				_IEVersion = (navigator.userAgent.match(/MSIE ([0-9]+)\./) ? parseInt(RegExp.$1) : 99);
-			
+
 			$img.attr('src', url);
-			
+
 			if ($img.get(0).complete
 			||	_IEVersion < 9)
 				(onload)();
@@ -120,7 +120,7 @@
 
 	// onVisible
 		(function() {
-		
+
 			// Vars
 				var $window = jQuery(window),
 					elements = [],
@@ -131,7 +131,7 @@
 						var l = elements.length,
 							x = $window.scrollTop() + $window.height(),
 							i, e;
-					
+
 						for (i=0; i < l; i++)
 						{
 							e = elements[i];
@@ -165,7 +165,7 @@
 				};
 
 		})();
-		
+
 $("#banner").scroll(function () {
     var y = $(this).scrollTop();
     if (y > 800) {
@@ -202,13 +202,13 @@ $("#banner").scroll(function () {
 
 		// Initialize carousels
 			$('.carousel').each(function() {
-				
+
 				var	$t = $(this),
 					$forward = $('<span class="forward"></span>'),
 					$backward = $('<span class="backward"></span>'),
 					$reel = $t.children('.reel'),
 					$items = $reel.children('article');
-				
+
 				var	pos = 0,
 					leftLimit,
 					rightLimit,
@@ -224,17 +224,17 @@ $("#banner").scroll(function () {
 						$t.n33_onVisible(function() {
 							var	timerId,
 								limit = $items.length - Math.ceil($window.width() / itemWidth);
-							
+
 							timerId = window.setInterval(function() {
 								var x = $items.filter('.loading'), xf = x.first();
-								
+
 								if (x.length <= limit)
 								{
 									window.clearInterval(timerId);
 									$items.removeClass('loading');
 									return;
 								}
-								
+
 								if (_IEVersion < 10)
 								{
 									xf.fadeTo(750, 1.0);
@@ -244,11 +244,11 @@ $("#banner").scroll(function () {
 								}
 								else
 									xf.removeClass('loading');
-								
+
 							}, helios_settings.carousels.fadeDelay);
 						}, 50);
 					}
-				
+
 				// Main
 					$t._update = function() {
 						pos = 0;
@@ -256,12 +256,12 @@ $("#banner").scroll(function () {
 						leftLimit = 0;
 						$t._updatePos();
 					};
-				
+
 					if (_IEVersion < 9)
 						$t._updatePos = function() { $reel.css('left', pos); };
 					else
 						$t._updatePos = function() { $reel.css('transform', 'translate(' + pos + 'px, 0)'); };
-					
+
 				// Forward
 					$forward
 						.appendTo($t)
@@ -275,15 +275,15 @@ $("#banner").scroll(function () {
 									window.clearInterval(timerId);
 									pos = rightLimit;
 								}
-								
+
 								$t._updatePos();
 							}, 10);
 						})
 						.mouseleave(function(e) {
 							window.clearInterval(timerId);
 						});
-				
-				// Backward	
+
+				// Backward
 					$backward
 						.appendTo($t)
 						.hide()
@@ -296,21 +296,21 @@ $("#banner").scroll(function () {
 									window.clearInterval(timerId);
 									pos = leftLimit;
 								}
-								
+
 								$t._updatePos();
 							}, 10);
 						})
 						.mouseleave(function(e) {
 							window.clearInterval(timerId);
 						});
-						
+
 				// Init
 					$window.load(function() {
 
 						reelWidth = $reel[0].scrollWidth;
 
 						skel.onStateChange(function() {
-				
+
 							if (_isTouch)
 							{
 								$reel
@@ -338,7 +338,7 @@ $("#banner").scroll(function () {
 						}).trigger('resize');
 
 					});
-				
+
 			});
 
 		// Initialize header
@@ -370,20 +370,20 @@ $("#banner").scroll(function () {
 					if (helios_settings.header.fadeIn)
 					{
 						$('<div class="overlay" />').appendTo($header);
-						
+
 						$window
 							.load(function() {
 								var imageURL = $header.css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, "");
 
 								$.n33_preloadImage(imageURL, function() {
-									
+
 									if (_IEVersion < 10)
 										$header.children('.overlay').fadeOut(2000);
 									else
 										window.setTimeout(function() {
 											$header.addClass('ready');
 										}, helios_settings.header.fadeDelay);
-								
+
 								});
 							});
 					}
