@@ -24,7 +24,7 @@
 	}
 	.section{
   position: relative;
-  margin: 75px 0px;
+  margin: 0px;
   width: 100%;
   height: 520px;
   text-align: center;
@@ -72,17 +72,17 @@
     perspective: 700px;
 }
 .folding li {
-    height: 200px;
+    height: 180px;
     color: #fff;
     padding-left: 30px;
     border-left: 30px solid rgba(0, 0, 0, .1);
 }
 .csstransforms3d .folding li {
-    -webkit-transition: ease .15s all;
-    -moz-transition: ease .15s all;
-    -o-transition: ease .15s all;
-    -ms-transition: ease .15s all;
-    transition: ease .15s all;
+    -webkit-transition: ease .4s all;
+    -moz-transition: ease .4s all;
+    -o-transition: ease .4s all;
+    -ms-transition: ease .4s all;
+    transition: ease .4s all;
 }
 
 
@@ -91,21 +91,16 @@
 }
 
 button{
-  display: block;
   position: relative;
-  top:-40px;
-  margin: 0px auto;
-  outline: 6px solid #dddddd;
+  top:-120px;
   font-size: 18px;
-  color: #fcb509;
   border: none;
   background: #ffffff;
-  background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 50%,#ffffff 51%,#ffffff 100%);
   padding: 13px 60px;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   cursor: pointer;}
 
 .csstransforms3d .folding li:nth-child(even) {
@@ -158,7 +153,7 @@ button{
     padding: 15px 0;
 }
 .csstransforms3d .folded li:nth-child(even) {
-    margin-top: -75px;
+    /*margin-top: -75px;*/
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
@@ -171,30 +166,25 @@ button{
     background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
 }
 .csstransforms3d .folded li:nth-child(odd) {
-    -webkit-transform: rotateX(-95deg);
-    -moz-transform: rotateX(-95deg);
-    -o-transform: rotateX(-95deg);
-    -ms-transform: rotateX(-95deg);
-    transform: rotateX(-95deg);
+    -webkit-transform: rotateX(-97.3deg);
+    -moz-transform: rotateX(-100deg);
+    -o-transform: rotateX(-100deg);
+    -ms-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
 }
 .csstransforms3d .folded .content {
     display: none;
 }
 /* Folding list heading */
- .connect {
+/* .connect {
     padding: 12px 0 12px 0px;
-    /*margin: 0 0 1px 0;*/
     color: #fff;
     border-left: 30px solid rgba(0, 0, 0, .2);
     cursor: pointer;
     font: bold .9em'Lucida sans unicode', Arial, Helvetica;
     background-color: #555;
-}
-.csstransforms3d .connect {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAMAAADeWG8gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE2QjAxNjRDOUNEOTExRTE4RTNFRkI1RDQ2MUYxOTQ3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE2QjAxNjREOUNEOTExRTE4RTNFRkI1RDQ2MUYxOTQ3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTZCMDE2NEE5Q0Q5MTFFMThFM0VGQjVENDYxRjE5NDciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTZCMDE2NEI5Q0Q5MTFFMThFM0VGQjVENDYxRjE5NDciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz42AEtnAAAABlBMVEX///////9VfPVsAAAAAnRSTlP/AOW3MEoAAAAWSURBVHjaYmAgFzBiACKFho6NAAEGAD07AG1pn932AAAAAElFTkSuQmCC);
-    background-repeat: no-repeat;
-    background-position: -24px center;
-}
+}*/
+
 /* Font awesome styles */
 [class*="fontawesome-"]::before {
     font-family:'FontAwesome', sans-serif;
