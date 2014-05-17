@@ -76,7 +76,7 @@
 				}
 			}
 
-	}
+	};
 
 /*********************************************************************************/
 /* Don't modify beyond this point unless you know what you're doing!             */
