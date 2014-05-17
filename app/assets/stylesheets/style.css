@@ -20,7 +20,7 @@
 
 	.icon{
 		margin: 50px;
-		
+
 	}
 	.section{
   position: relative;
@@ -431,7 +431,7 @@ section.special > header, section.special > footer, article.special > header, ar
 				-ms-transition: opacity 0.35s ease-in-out;
 				transition: opacity 0.35s ease-in-out;
 			}
-			
+
 				a.image:hover:before
 				{
 					opacity: 0.15;
@@ -2179,7 +2179,7 @@ header .fa.circled {
 /* Side-Bar                                                                        */
 
 /*********************************************************************************/
- 
+
 /*********************************************************************************/
 
 /* Content                                                                       */
@@ -2198,7 +2198,7 @@ header .fa.circled {
 		top: 35%;
 
 	}
-	.scroll-circle{ 
+	.scroll-circle{
 		/*unclick, go transparent*/
 		width: 7px;
 		height: 7px;
@@ -2208,10 +2208,10 @@ header .fa.circled {
 		background-color: transparent;
 		margin-bottom: 200%;
 		cursor: pointer;
-		
+
 		/* width and height can be anything, as long as they're equal */
 	}
-	.clicked{ 
+	.clicked{
 		/*clickedblacken*/
 		width: 7px;
 		height: 7px;
@@ -2221,7 +2221,7 @@ header .fa.circled {
 		background-color: rgb(102, 99, 102);
 		margin-bottom: 200%;
 		cursor: pointer;
-		
+
 		/* width and height can be anything, as long as they're equal */
 	}
 /*********************************************************************************/

@@ -11,8 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery.min
-//= require jquery.dropotron.min
 //= require jquery_ujs
+//= require html5up/skel.min
 //= require_tree .
 
