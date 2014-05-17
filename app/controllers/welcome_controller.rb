@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
     def index
         if params[:article]
             @userdata = params[:article]
-            UserMailer.welcome_email(@userdata).deliver
+            #UserMailer.welcome_email(@userdata).deliver
         end
         puts (params[:article])
     end
