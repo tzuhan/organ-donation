@@ -14,5 +14,5 @@
  *= require bootstrap
  *= require datepicker
  *= require avgrund
- *= require ladda.theme
+ *= require ladda-themeless.min
  */
