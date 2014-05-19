@@ -20,6 +20,7 @@ class WelcomeController < ApplicationController
         @userdata = params[:article]
         # puts (UserMailer.welcome_email(@userdata))
         UserMailer.welcome_email(@userdata).deliver
+        render(:action => 'index')
     end
 
     def send_mail

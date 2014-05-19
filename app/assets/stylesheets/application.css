@@ -11,4 +11,8 @@
  *
  *= require_self
  *= require_tree .
+ *= require bootstrap
+ *= require datepicker
+ *= require avgrund
+ *= require ladda.theme
  */
