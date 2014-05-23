@@ -17,5 +17,5 @@
 //= require bootstrap
 //= require bootstrap-datepicker
 //= require jquery.avgrund
-//= require ladda
 //= require spin
+//= require ladda
