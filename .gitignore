@@ -16,3 +16,6 @@
 
 # Ignore Mac self-generated files
 .DS_Store
+
+#ignore .* files
+.*

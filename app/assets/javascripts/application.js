@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require html5up/skel.min
 //= require_tree .
-
+//= require bootstrap
+//= require bootstrap-datepicker
+//= require jquery.avgrund
+//= require ladda
+//= require spin

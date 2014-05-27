@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#id {font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;}
+#id {
+    font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+}
 
 .action-steps {
     margin: 10px auto;
@@ -81,19 +83,60 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.reg-form {
-    width: 800px;
+/*****************/
+/* register form */
+/*****************/
+.reg-div {
+    width: 50%;
     margin: 20px auto;
     padding: 50px;
     border-radius: 10px;
     background-color: #cdcdcd;
 }
-
-form p {
+/*
+.reg-form p {
     margin: 20px auto;
     font-size: 1.2em;
     text-align: center;
+    label {
+        float: left;
+    }
+
 }
+*/
+.reg-form {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    label {
+        display: block;
+    }
+    div.inline-div-1 {
+        margin-right: 10px;
+        display: inline-block;
+    }
+    div.horiz-radio {
+        display: inline;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        label {
+            display: inline;
+        }
+    }
+    .postal-code {
+        display: inline;
+        width: 20%;
+    }
+    .address {
+        display: inline;
+        width: 75%;
+    }
+}
+
+div.datepicker.dropdown-menu {
+    width: 225px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 
 /* from bootstrap */
 .bs-callout {
@@ -125,4 +168,15 @@ form p {
   background-color: #f0f7fd;
   border-color: #d0e3f0;
 }
+
+/******************************/
+/* robot interactive division */
+/******************************/
+#robot-div {
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    background-color: #f0f7fd;
+}
+
 
