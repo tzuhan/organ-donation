@@ -5,6 +5,7 @@ class WelcomeController < ApplicationController
             #UserMailer.welcome_email(@userdata).deliver
         end
         puts (params[:article])
+        @welcome_page = true
     end
 
     def reg

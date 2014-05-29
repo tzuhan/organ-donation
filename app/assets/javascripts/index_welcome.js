@@ -49,7 +49,7 @@
             if ($(this).hasClass('bt8')) {
                 $('.qt8').toggleClass('folded');
             };
-        })
+        });
         // If needed, unfold the list right away
         if (topElemOffset <= $(window).height() - foldingListHeight)
             unfold();
@@ -62,6 +62,7 @@
 
 
         // Eric
+
         var robotDiv = $('#robot-div');
         $('#take-action-btn').on('click', triggerTakeAction);
 
