@@ -20,6 +20,20 @@
  .icon {
     margin: 50px;
 }
+#tinman{
+width: 60%;
+position: relative;
+left: -60%;
+}
+.tinmancontainer {
+    position: fixed;
+    width: 10%;
+    height: 60%;
+    right: 0px;
+    top: 15%;
+    background-color: #15FFE3;
+    z-index: 300;
+}
 .chapter {
     display: block;
     height: 50px;
@@ -30,7 +44,7 @@
     position: relative;
     margin: 0px;
     width: 100%;
-    height: 520px;
+    /*height: 520px;*/
     text-align: center;
     font-family:'Andale Mono', arial, sans-serif;
     background-color:#63CFD4;
@@ -46,7 +60,7 @@
     color: #3D3B42;
     display: block;
     height:300px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 0 auto;
     padding-bottom: 15px;
 }
 /* Demo only styles*/
@@ -86,9 +100,9 @@
 .section strong {
     color: #F21E52;
 }
-button {
+button.connect {
     position: relative;
-    top:-120px;
+    top:-30px;
     font-size: 18px;
     border: none;
     color: #000;
@@ -105,18 +119,18 @@ button {
     cursor: pointer;
 }
 .csstransforms3d .folding li:nth-child(even) {
-            margin-top: -5px;
-            -webkit-transform-origin: 50% 100%;
-            -moz-transform-origin: 50% 100%;
-            -o-transform-origin: 50% 100%;
-            -ms-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-            -webkit-transform: rotateX(0deg);
-            -moz-transform: rotateX(0deg);
-            -o-transform: rotateX(0deg);
-            -ms-transform: rotateX(0deg);
-            transform: rotateX(0deg);
-        }
+    margin-top: -5px;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
 .csstransforms3d .folding li:nth-child(odd) {
     -webkit-transform-origin: 50% 0%;
     -moz-transform-origin: 50% 0%;
@@ -147,18 +161,18 @@ button {
     padding: 15px 0;
 }
 .csstransforms3d .folded li:nth-child(even) {
-            margin-top: -200px;
-            -webkit-transform: rotateX(90deg);
-            -moz-transform: rotateX(90deg);
-            -o-transform: rotateX(90deg);
-            -ms-transform: rotateX(90deg);
-            transform: rotateX(90deg);
-            background-image: -webkit-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.5));
-            background-image: -moz-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.5));
-            background-image: -o-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.5));
-            background-image: -ms-linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.5));
-            background-image: linear-gradient(rgba(255,255,255,0) 50%, rgba(255,255,255,.5));
-        }
+    margin-top: -200px;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+}
 .csstransforms3d .folded li:nth-child(odd) {
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
@@ -196,7 +210,7 @@ button {
     font-weight: normal;
 }
 .section h1 {
-    font-family:"MStiffHeiHK-UltraBold";
+    font-family:"CSong3HK-Medium";
 }
 .section h1 {
     font-size: 40px;
