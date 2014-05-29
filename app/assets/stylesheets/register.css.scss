@@ -14,33 +14,24 @@
     width: 75%;
     background-color: #ccc;
     text-align: center;
-}
-.action-steps > * {
-    vertical-align: middle;
-}
-.step-type-1 {
+    & > * {
+        vertical-align: middle;
+    }
+    &.step-type-1 {
     background-color: #dff0d8;
-}
-.step-type-2 {
-    background-color: #fcf8e3;
-}
-.step-type-3 {
-    background-color: #f2dede;
-}
-
-.circle-base {
-    border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-}
-
-.ctype-1 {
-    height: 90px;
-    background: #ccc;
+    }
+    &.step-type-2 {
+        background-color: #fcf8e3;
+    }
+    &.step-type-3 {
+        background-color: #f2dede;
+    }
 }
 
 .step-icon {
     margin: 0 2%;
     width: 12%;
+    max-width: 120px;
     height: 100%;
     display: inline-block;
     // float: left;
@@ -49,25 +40,21 @@
     // line-height: 90px;
 }
 
-.step-icon img {
-    position: relative;
-}
 .step-content {
     margin: 0 auto;
     width: 80%;
     display: inline-block;
     text-align: left;
     vertical-align: middle;
+    h3 {
+        margin: 10px 0;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.2em;
+    }
 }
-.step-content h3 {
-    margin: 10px 0;
-    font-size: 1.7em;
-    font-weight: bold;
-}
-.action-steps .step-content p {
-    font-size: 1.2em;
-}
-
 
 /*****************/
 /* register form */
@@ -79,16 +66,7 @@
     border-radius: 10px;
     background-image: url('ricepaper_v3.png');
 }
-/*
-.reg-form p {
-    margin: 20px auto;
-    font-size: 1.2em;
-    text-align: center;
-    label {
-        float: left;
-    }
-}
-*/
+
 .reg-form {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     label {
