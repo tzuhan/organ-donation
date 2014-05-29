@@ -17,43 +17,7 @@
 -->
 <% @body_class = "homepage" %>
 
-    <!-- Header -->
-    <div id="header">
-       <!-- Inner -->
-        <div class="inner">
-            <header>
-                <h1>
-                    <a href="#" id="logo" style="font-family:MStiffHeiHK-UltraBold; font-size:100px">器而不捨</a>
-                </h1>
-                <hr />
-                <span class="byline">一個機器人找尋新零件的故事</span>
-            </header>
-            <footer>
-                <a href="#banner" class="button circled scrolly">開始</a>
-            </footer>
-        </div>
-        <!-- Nav -->
-        <nav id="nav">
-            <ul>
-                <li><%= link_to "首頁", @welcome %></li>
-                <li>
-                    <span>了解器捐</span>
-                    <ul>
-                        <li>
-                            <span>器捐流程 &hellip;</span>
-                            <ul>
-                                <li><a href="#">器官捐贈者</a></li>
-                                <li><a href="#">器官受贈者</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">法規部分</a></li>
-                    </ul>
-                </li>
-                <li><%= link_to "器捐故事", story_path(@story) %></li>
-                <li><%= link_to "立即簽署", register_path(@register) %></li>
-            </ul>
-        </nav>
-    </div>
+
 
     <!-- Overlay Img -->
     <div class="overlay">
@@ -143,7 +107,6 @@
         <li class="qttop"></li>
         <li class="qtbot"></li>
     </ul>
-
 
     <div class="chapter"></div>
     <section class="section" id="section4">

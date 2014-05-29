@@ -1,5 +1,4 @@
 // temp disabled
-
 (function() {
     $(document).ready(function() {
         console.log('haah');

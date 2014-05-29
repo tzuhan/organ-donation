@@ -57,8 +57,8 @@ CcspFinal::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
     root :to  => "welcome#index"
+    get "welcome" => "welcome#index"
     post "welcome" => "welcome#send_reg"
-    #get "welcome" => "welcome#index"
     get "story" => "story#index"
     get "register" => "register#index"
     # use say function in welcome controller
