@@ -73,3 +73,13 @@
         }
     });
 })();
+
+$(document).ready(function() {
+  $('#tinman').click(function() {
+    $('.tinmancontainer').animate({
+      right: parseInt($('.tinmancontainer').css('right'),10) == 0 ?
+        -$('.tinmancontainer').outerWidth() :
+        0
+    });
+  });
+});
