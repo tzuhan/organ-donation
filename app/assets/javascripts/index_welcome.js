@@ -74,6 +74,7 @@
 })();
 
 $(document).ready(function() {
+  $('.tinmancontainer').css('right',-$('.tinmancontainer').outerWidth());
   $('#tinman').click(function() {
     $('.tinmancontainer').animate({
       right: parseInt($('.tinmancontainer').css('right'),10) == 0 ?
