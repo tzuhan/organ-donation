@@ -10,8 +10,9 @@
 
 .action-steps {
     margin: 50px auto;
-    padding: 20px;
     width: 75%;
+    max-width: 1080px;
+    border-radius: 10px;
     background-color: #ccc;
     text-align: center;
     & > * {
@@ -29,7 +30,7 @@
 }
 
 .step-icon {
-    margin: 0 2%;
+    margin: 20px 2%;
     width: 12%;
     max-width: 120px;
     height: 100%;
@@ -41,7 +42,7 @@
 }
 
 .step-content {
-    margin: 0 auto;
+    margin: 20px 1%;
     width: 80%;
     display: inline-block;
     text-align: left;
@@ -53,6 +54,7 @@
     }
     p {
         font-size: 1.2em;
+        line-height: 1.5em;
     }
 }
 
@@ -60,9 +62,10 @@
 /* register form */
 /*****************/
 .reg-div {
-    width: 75%;
     margin: 20px auto;
     padding: 50px;
+    width: 75%;
+    max-width: 1080px;
     border-radius: 10px;
     background-image: url('ricepaper_v3.png');
 }
