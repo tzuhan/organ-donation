@@ -7,7 +7,6 @@ gem 'rails', '3.2.17'
 
 gem 'sqlite3'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -36,3 +35,16 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# For facebook login
+# gem 'omniauth'
+# gem 'omniauth-facebook','1.4.0'
+# gem 'certified'
+# gem 'thin'
+
+# Forem Gem
+# gem 'forem', :github => "radar/forem"
+# gem 'will_paginate', '3.0.5'
+
+# Devise
+# gem 'devise'

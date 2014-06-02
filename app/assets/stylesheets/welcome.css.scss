@@ -6,6 +6,12 @@
     font-family: "微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
 }
 
+#header {
+    a {
+        &:hover { text-decoration: none; }
+    }
+}
+
 /* from bootstrap */
 .bs-callout {
   margin: 20px 0;

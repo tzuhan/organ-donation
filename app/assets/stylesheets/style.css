@@ -17,9 +17,11 @@
 /* Basic                                                                         */
 
 /*********************************************************************************/
+
 .header{
 	text-decoration: none;
 }
+
 .icon {
     margin: 50px;
 }
@@ -259,7 +261,7 @@ button.connect {
     transition: all 0.3s ease-out;
     cursor: pointer;
 }*/
- button:hover {
+button:hover {
     outline: 6px solid #fcb509;
     color: #000;
     background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
