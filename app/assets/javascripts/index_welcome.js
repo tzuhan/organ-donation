@@ -58,7 +58,7 @@
             var th = $(this);
             if (th.scrollTop() + th.height() - foldingListHeight >= 3*topElemOffset)
                 unfold();
-        })
+        });
 
 
         // Eric
@@ -84,3 +84,42 @@ $(document).ready(function() {
     });
   });
 });
+
+
+
+
+/*----------------------------------------------------*/
+// MENU SMOOTH SCROLLING by Han
+/*----------------------------------------------------*/  
+    $(".button.circled.scrolly a").bind('click',function(event){
+		
+		//var headerH = $('nav').height();
+	   	// <footer>
+    	//  	<a href="#intro" class="button circled scrolly">開始</a>
+        // </footer>
+
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 1200,
+            easing: "easeInOutExpo"
+        });
+
+        return false;
+		event.preventDefault();
+    });
+	
+/*----------------------------------------------------*/
+// scroll icons by Han
+/*----------------------------------------------------*/  
+        $("#scroll-icons div").click(function(){
+            $("div.clicked").toggleClass('clicked');
+            $(this).toggleClass('clicked');
+            //smoooth scrolling
+            $("html, body").animate({
+            	scrollTop: $($(this).attr("href")).offset().top + "px"
+    		}, {
+		        duration: 1200,
+		        easing: "easeInOutExpo"
+        	});
+        });
