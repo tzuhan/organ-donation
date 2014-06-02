@@ -37,8 +37,14 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 # For facebook login
-gem 'omniauth'
-gem 'omniauth-facebook','1.4.0'
-gem 'certified'
+# gem 'omniauth'
+# gem 'omniauth-facebook','1.4.0'
+# gem 'certified'
+# gem 'thin'
 
-gem 'thin'
+# Forem Gem
+# gem 'forem', :github => "radar/forem"
+# gem 'will_paginate', '3.0.5'
+
+# Devise
+# gem 'devise'
