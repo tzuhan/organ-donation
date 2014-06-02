@@ -20,28 +20,38 @@
 .header{
 	text-decoration: none;
 }
- .icon {
+.icon {
     margin: 50px;
 }
 #tinman{
 width: 60%;
 position: relative;
-left: -60%;
 }
 .tinmancontainer {
     position: fixed;
     width: 10%;
     height: 60%;
-    right: 0px;
-    top: 15%;
-    background-color: #15FFE3;
-    z-index: 300;
+    right: -23px;
+    top: 5%;
+    z-index: 10;
+}
+.tinmanbox{
+	position: relative;
+	background-color: #334D5C;
+	width: 95px;
+	height: 100%;
+}
+.tinmancontainer .icon{
+	position: relative;
+	width: 30%;
+	margin: 7px;
+	z-index: 9; 
 }
 .chapter {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: orange;
+    background-color: #EEC84C;
 }
 .section {
     position: relative;
@@ -50,7 +60,7 @@ left: -60%;
     /*height: 520px;*/
     text-align: center;
     font-family:'Andale Mono', arial, sans-serif;
-    background-color:#63CFD4;
+    background-color:#45B19C;
     color: #0C6F73;
     line-height: 24px;
     border: 1px solid #ddd;
@@ -62,7 +72,7 @@ left: -60%;
     position:relative;
     color: #3D3B42;
     display: block;
-    height:300px;
+    height:350px;
     margin: 0 auto 0 auto;
     padding-bottom: 15px;
 }
@@ -147,10 +157,10 @@ button.connect {
     transform: rotateX(0deg);
 }
 .folding .qttop {
-    background-color: #3358D3;
+    background-color: #ED9E77;
 }
 .folding .qtbot {
-    background-color: #2C4AD3;
+    background-color: #E17A3F;
 }
 .rss-link {
     color: #fff;
@@ -229,7 +239,7 @@ button.connect {
     width:700px;
 }
 .section strong {
-    color: #ff7d23;
+    color: #E17A3F;
 }
 /*button {
     display: block;
@@ -2162,10 +2172,10 @@ header .fa.circled {
 }
 /*********************************************************************************/
 
-/* Banner                                                                        */
+/* Introduction                                                                       */
 
 /*********************************************************************************/
- #banner {
+ #intro {
     padding: 4.5em 0 4.5em 0;
     max-width: 600px;
     position: relative;

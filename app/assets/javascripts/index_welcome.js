@@ -75,13 +75,15 @@
 })();
 
 $(document).ready(function() {
-  $('.tinmancontainer').css('right',-$('.tinmancontainer').outerWidth());
+  $('.tinmanbox').css('right',-$('.tinmanbox').outerWidth());
   $('#tinman').click(function() {
-    $('.tinmancontainer').animate({
-      right: parseInt($('.tinmancontainer').css('right'),10) == 0 ?
-        -$('.tinmancontainer').outerWidth() :
+    $('.tinmanbox').animate({
+      right: parseInt($('.tinmanbox').css('right'),10) == 0 ?
+        -$('.tinmanbox').outerWidth() :
         0
+
     });
+    //hide or show tinmanbox this.toggle();
   });
 });
 
