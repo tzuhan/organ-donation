@@ -21,7 +21,7 @@
                     return;
                 }
             }, 500);
-        }
+        };
 
         // Fold/Unfold the list
         $('.connect').on("click", function() {
