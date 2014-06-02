@@ -10,9 +10,8 @@
         });
 
         // Yo
-        var foldingList = $('.folding');
-        console.log(foldingList);
-        var foldingListHeight = $('.folding').height(),
+        var foldingList = $('.folding'),
+        foldingListHeight = $('.folding').height(),
         topElemOffset = foldingList.offset().top;
             // Function responsible for unfolding the list
         unfold = function() {
@@ -26,8 +25,31 @@
 
         // Fold/Unfold the list
         $('.connect').on("click", function() {
-            foldingList.toggleClass('folded');
-        })
+            if ($(this).hasClass('bt1')) {
+                $('.qt1').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt2')) {
+                $('.qt2').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt3')) {
+                $('.qt3').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt4')) {
+                $('.qt4').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt5')) {
+                $('.qt5').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt6')) {
+                $('.qt6').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt7')) {
+                $('.qt7').toggleClass('folded');
+            };
+            if ($(this).hasClass('bt8')) {
+                $('.qt8').toggleClass('folded');
+            };
+        });
         // If needed, unfold the list right away
         if (topElemOffset <= $(window).height() - foldingListHeight)
             unfold();
@@ -38,5 +60,27 @@
                 unfold();
         })
 
+
+        // Eric
+
+        var robotDiv = $('#robot-div');
+        $('#take-action-btn').on('click', triggerTakeAction);
+
+        function triggerTakeAction(evt) {
+            robotDiv.animate({
+                'height': '300px',
+            });
+        }
     });
 })();
+
+$(document).ready(function() {
+  $('.tinmancontainer').css('right',-$('.tinmancontainer').outerWidth());
+  $('#tinman').click(function() {
+    $('.tinmancontainer').animate({
+      right: parseInt($('.tinmancontainer').css('right'),10) == 0 ?
+        -$('.tinmancontainer').outerWidth() :
+        0
+    });
+  });
+});

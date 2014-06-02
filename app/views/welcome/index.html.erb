@@ -1,573 +1,373 @@
 <!--
-		<title>CCSP Final - Organ Donation</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
-        <%= stylesheet_link_tag 'style' %>
-        <%= stylesheet_link_tag 'style-wide' %>
-        <%= stylesheet_link_tag 'style-narrow' %>
-        <%= stylesheet_link_tag 'style-normal' %>
-		<noscript>
-            <%= stylesheet_link_tag 'skel-noscript' %>
-            <%= stylesheet_link_tag 'style-desktop' %>
-            <%= stylesheet_link_tag 'style-noscript' %>
-		</noscript>
+    <title>CCSP Final - Organ Donation</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <%= stylesheet_link_tag 'style' %>
+    <%= stylesheet_link_tag 'style-wide' %>
+    <%= stylesheet_link_tag 'style-narrow' %>
+    <%= stylesheet_link_tag 'style-normal' %>
+    <noscript>
+        <%= stylesheet_link_tag 'skel-noscript' %>
+        <%= stylesheet_link_tag 'style-desktop' %>
+        <%= stylesheet_link_tag 'style-noscript' %>
+    </noscript>
 -->
 <% @body_class = "homepage" %>
-	<!-- Header -->
-	<div id="header">
-
-	   <!-- Inner -->
-		<div class="inner">
-			<header>
-				<h1><a href="#" id="logo" style="font-family:MStiffHeiHK-UltraBold; font-size:100px">器而不捨</a></h1>
-				<hr />
-				<span class="byline">一個機器人找尋新零件的故事</span>
-			</header>
-			<footer>
-				<a href="#banner" class="button circled scrolly">開始</a>
-			</footer>
-		</div>
-
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><%= link_to "首頁", @welcome %></li>
-				<li>
-					<span>了解器捐</span>
-					<ul>
-						<li>
-							<span>器捐流程 &hellip;</span>
-							<ul>
-								<li><a href="#">器官捐贈者</a></li>
-								<li><a href="#">器官受贈者</a></li>
-							</ul>
-						</li>
-						<li><a href="#">法規部分</a></li>
-
-					</ul>
-				</li>
-				<li><%= link_to "器捐故事", story_path(@story) %></li>
-				<li><a href="#">立即簽署</a></li>
-			</ul>
-		</nav>
-	</div>
-
-	<!-- Overlay img -->
-
-	<div class="overlay">
-	</div>
-	<!-- side Banner -->
-	<div id="banner">
-
-		<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很久很久以前......在遙遠的奧茲國度，曾有一個小女孩桃樂絲，和一隻獅子、機器人、稻草人開始了一連串冒險，追尋勇氣、善心與智慧。<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好幾百年過去了，小女孩、獅子、稻草人早已離開，只剩機器人還運作著，只是那顆用了幾百年的心，也慢慢開始不堪負荷。機器人於是踏上旅程，向東方一個神祕的小島去找尋新的零件......
-			</h1>
-	</div>
-
-		<div id="scroll-icons" style="">
-            <a href="#section1"><div class="scroll-circle" id="c3">
-            </div></a>
-            <a href="#section2"><div class="scroll-circle" id="c4">
-            </div></a>
-            <a href="#section3"><div class="scroll-circle" id="c5">
-            </div></a>
-            <a href="#section4"><div class="scroll-circle" id="c6">
-            </div></a>
-            <a href="#section5"><div class="scroll-circle" id="c7">
-            </div></a>
-            <a href="#section6"><div class="scroll-circle" id="c8">
-            </div></a>
-            <a href="#section7"><div class="scroll-circle" id="c9">
-            </div></a>
-            <a href="#section8"><div class="scroll-circle" id="c10">
-            </div></a>
-            <a href="#section9"><div class="scroll-circle" id="c11">
-            </div></a>
-            <script>
-			$("#scroll-icons div").click(function(){
-				$("div.clicked").toggleClass('clicked');
-				$(this).toggleClass('clicked');
-
-			});
-
-			</script>
-          </div>
 
 
-	<!-- Main -->
-	<section class="section" id="section1">
-		<%= image_tag('Organs_kidney.png', :class => "icon")%>
-			  <hgroup >
+    <!-- Tinman side tab -->
+    <div class="tinmancontainer" style="right: -175px;">
+        <img id="tinman" src="../../assets/tm_1.svg">
+        <div class="tinmanbox"></div>
+    </div>
 
-				    <h1>&nbsp&nbsp&nbsp- <strong>什麼是「器官捐贈/移植」？</strong> -</h1><br><br>
-					<h2>器官捐贈與移植是現代醫學最大的進步！
-				<br><br>
-				當一個人在生前表達個人意願，或家屬的同意，願意在其死後，將可用的器官捐贈給需要的人，醫生便能評估器官的狀況，在黃金時間內找到合適的移植者，進
-				行移植手術，讓一個人的逝去，延續另一個人的生命。</h2>
-				  
-				  </hgroup>
+    <!-- Overlay Img -->
+    <div class="overlay">
+    </div>
 
-				  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>		  
-		  
+    <!-- Side Banner -->
+    <div id="banner">
+        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很久很久以前......在遙遠的奧茲國度，曾有一個小女孩桃樂絲，和一隻獅子、機器人、稻草人開始了一連串冒險，追尋勇氣、善心與智慧。<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好幾百年過去了，小女孩、獅子、稻草人早已離開，只剩機器人還運作著，只是那顆用了幾百年的心，也慢慢開始不堪負荷。機器人於是踏上旅程，向東方一個神祕的小島去找尋新的零件......
+        </h1>
+    </div>
+    <div id="scroll-icons" style="">
+        <a href="#section1"><div class="scroll-circle" id="c3">
+        </div></a>
+        <a href="#section2"><div class="scroll-circle" id="c4">
+        </div></a>
+        <a href="#section3"><div class="scroll-circle" id="c5">
+        </div></a>
+        <a href="#section4"><div class="scroll-circle" id="c6">
+        </div></a>
+        <a href="#section5"><div class="scroll-circle" id="c7">
+        </div></a>
+        <a href="#section6"><div class="scroll-circle" id="c8">
+        </div></a>
+        <a href="#section7"><div class="scroll-circle" id="c9">
+        </div></a>
+        <a href="#section8"><div class="scroll-circle" id="c10">
+        </div></a>
+        <a href="#section9"><div class="scroll-circle" id="c11">
+        </div></a>
+        <script>
+            $("#scroll-icons div").click(function(){
+                $("div.clicked").toggleClass('clicked');
+                $(this).toggleClass('clicked');
+            });
+        </script>
+    </div>
 
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2 id="qs">問題一</h2>
-                <div id="qtext1">
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  	</div>
-	  	<div id="qtext2">
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  </div>
-	  <div id="qtext3">
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-	  </div>
-	  <div id="qtext4">
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-	  </div>
-            </div>
-        </li>
-        </ul>
+    <!-- Main -->
+    <div class="chapter"></div>
+    <section class="section" id="section1">
+        <%= image_tag('Organs_kidney.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>什麼是「器官捐贈/移植」？</strong></h1><br><br>
+            <h2>
+                器官捐贈與移植是現代醫學最大的進步！<br><br>
+                當一個人在生前表達個人意願，或家屬的同意，願意在其死後，將可用的器官捐贈給需要的人，醫生便能評估器官的狀況，在黃金時間內找到合適的移植者，進行移植手術，讓一個人的逝去，延續另一個人的生命。
+            </h2>
+        </hgroup>
+        <button class="bt1 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt1 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
+    <div class="chapter"></div>
+    <section class="section" id="section2">
+        <%= image_tag('Organs_eye.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>哪些器官可以捐贈呢？心臟可以嗎？！</strong></h1><br><br>
+            <h2>
+                依據法規，可以移植的器官包括：心臟、肝臟、腎臟、肺臟、胰臟、小腸、骨骼、眼角膜及其他經中央衛生主管機關指定之類目，所以1個捐贈者，就可能改變8個人的生命！<br><br>
+                目前多數器官的捐贈者，多為車禍並經腦死宣判者，在腦死的狀態下，身體機能會維持一段時間才停止。在這個時間點，我們可以選擇讓時間關閉一個一個器官，也可以選擇移植器官、救活他人，當然一切的前提都是死者與家屬的同意才得以進行。
+            </h2>
+        </hgroup>
+        <button class="bt2 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt2 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
+    <div class="chapter"></div>
+    <section class="section" id="section3">
+        <%= image_tag('Organs_bone.png', :class => "icon")%>
+        <hgroup >
+            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1><br><br>
+            <h2>
+                少數器官可以「活體捐贈」。<br><br>
+                比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。<br><br>
+                在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。
+            </h2>
+        </hgroup>
+        <button class="bt3 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt3 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
-				</section>
+    <div class="chapter"></div>
+    <section class="section" id="section4">
+        <%= image_tag('Organs_intestine.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1><br><br>
+            <h2>
+                根據「財團法人器官捐贈移植登錄中心」的登記，<br>
+                截至103年5月止，共有8,513個在等待器官移植的人。<br><br>
+                每年都有數百人的增加。
+            </h2>
+        </hgroup>
+        <button class="bt4 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt4 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
-		<section class="section" id="section2">
-			<%= image_tag('Organs_eye.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>哪些器官可以捐贈呢？心臟可以嗎？！</strong> -</h1><br><br>
-					<h2>依據法規，可以移植的器官包括：心臟、肝臟、腎臟、肺臟、胰臟、小腸、骨骼、眼角膜及其他經中央衛生主管機關指定之類目，所以1個捐贈者，就可能改變8個人的生命！
-				<br><br>
-				
-				目前多數器官的捐贈者，多為車禍並經腦死宣判者，在腦死的狀態下，身體機能會維持一段時間才停止。在這個時間點，我們可以選擇讓時間關閉一個一個器官，也可以選擇移植器官、救活他人，當然一切的前提都是死者與家屬的同意才得
-				以進行。</h2>
+    <div class="chapter"></div>
+    <section class="section" id="section5">
+        <%= image_tag('Organs_kidney.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1><br><br>
+            <h2>
+                台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！<br><br>
+                （圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）<br><br>
+                如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。<br><br>
+                數據：
+                a.
+                行政院衛生署
+            </h2>
+        </hgroup>
+        <button class="bt5 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt5 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
-				  </hgroup>
+    <div class="chapter"></div>
+    <section class="section" id="section6">
+        <%= image_tag('Organs_liver.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>如果成為「器官捐贈者」我要付出什麼代價嗎？</strong></h1><br><br>
+            <h2>
+                代價：沒有！<br><br>
+                多數人得以健康活到終老，僅有少數人意外腦死，在器官良好的狀態下，醫院才會徵詢家屬捐贈的可能性。醫院也不會放棄搶救任何一個「器官捐贈者」！醫院提供一樣的醫療服務，以搶救生命為優先。器官捐贈是無條件且無償的捐贈，所有醫療及相關費用將由全民健保給付，捐贈者家屬不需額外負擔任何費用。<br><br>
+                所以成為一個「器官捐贈者」，無損亦無償，但所捐贈的器官，卻能成為另一人生命中的無價之寶。
+            </h2>
+        </hgroup>
+        <button class="bt6 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt6 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    <div class="chapter"></div>
+    <section class="section" id="section7">
+        <%= image_tag('Organs_lung.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>有器官了！身為「符合條件的移植者」我該做什麼？</strong></h1><br><br>
+            <h2>
+                當有器官捐贈時，醫院將會比對資料後通報第一批符合的人選，讓他們有心理準備可能即將有一場移植手術。在醫院完成詳細比對後，將通報最佳合適人選，確認移植意願後，便開始一場移植手術。<br><br>
+                手術時間因人而異，以肝臟來說，一場移植手術平均約進行 10 小時。手術後移植者還不能出院，必須住院觀察數週，出院後仍須定期追蹤器官狀況。
+            </h2>
+        </hgroup>
+        <button class="bt7 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt7 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
+    <div class="chapter"></div>
+    <section class="section" id="section8">
+        <%= image_tag('Organs_pancreas.png', :class => "icon")%>
+        <hgroup>
+            <h1>&nbsp&nbsp&nbsp<strong>完成器官捐贈/移植了！在結束手術之後......</strong></h1><br><br>
+            <h2>
+                完成捐贈/移植後，捐贈者與移植者均需住院修養一陣子，等待復原後，兩人生活即可恢復如常。<br><br>
+                但移植者由於本身的免疫效果，身體將會去排斥來自捐贈者的那顆器官，輕重程度因人而異，往往還是要吃藥來減低排斥，但是比照移植前的生死攸關，他們的生命已獲得改善。
+            </h2>
+        </hgroup>
+        <button class="bt8 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
+    </section>
+    <ul class="qt8 folding folded">
+        <li class="qttop"></li>
+        <li class="qtbot"></li>
+    </ul>
 
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section3">
-			<%= image_tag('Organs_bone.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong> -</h1><br><br>
-					<h2>少數器官可以「活體捐贈」。
-				<br><br>
-				比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。
-				<br><br>
-				在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。</h2>
-
-				  
-				  </hgroup>
-
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section4">
-			<%= image_tag('Organs_intestine.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>目前台灣有多少人在等待器官呢？</strong> -</h1><br><br>
-					<h2>根據「財團法人器官捐贈移植登錄中心」的登記，<br>截至103年5月止，共有8,513個在等待器官移植的人。<br><br>每年都有數百人的增加。</h2>
-				  
-				  </hgroup>
-
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section5">
-			<%= image_tag('Organs_kidney.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong> -</h1><br><br>
-					<h2>台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！
-				<br><br>
-				（圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）
-				<br><br>
-				如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。
-				<br><br>
-				數據：
-				a. 
-				行政院衛生署</h2>
-				  
-				  </hgroup>
-
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section6">
-			<%= image_tag('Organs_liver.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>如果成為「器官捐贈者」我要付出什麼代價嗎？</strong> -</h1><br><br>
-					<h2>代價：沒有！
-				<br><br>
-				多數人得以健康活到終老，僅有少數人意外腦死，在器官良好的狀態下，醫院才會徵詢家屬捐贈的可能性。醫院也不會放棄搶救任何一個「器官捐贈者」！醫院提供一樣的醫療服務，以搶救生命為優先。器官捐贈是無條件且無償的捐贈，所有醫療及相關費用將由全民健保給付，捐贈者家屬不需額外負擔任何費用。
-				<br
-				><br>
-				所以成為一個「器官捐贈者」，無損亦無償，但所捐贈的器官，卻能成為另一人生命中的無
-				價之寶。</h2>
-				  </hgroup>
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section7">
-			<%= image_tag('Organs_lung.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>有器官了！身為「符合條件的移植者」我該做什麼？</strong> -</h1><br><br>
-					<h2>當有器官捐贈時，醫院將會比對資料後通報第一批符合的人選，讓他們有心理準備可能即將有一場移植手術。在醫院完成詳細比對後，將通報最佳合適人選，確認移植意願後，便開始一場移植手術。
-				<br><br>
-				手術時
-				間因人而異，以肝臟來說，一場移植手術平均約進行 10 小時。手術後移植者還不能出院，必須住院觀察數週，出院後仍須定期追蹤器
-				官狀況。</h2>
-				  </hgroup>
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-		</section>
-
-		<section class="section" id="section8">
-			<%= image_tag('Organs_pancreas.png', :class => "icon")%>
-				  <hgroup >
-				    <h1>&nbsp&nbsp&nbsp- <strong>完成器官捐贈/移植了！在結束手術之後......</strong> -</h1><br><br>
-					<h2>完成捐贈/移植後，捐贈者與移植者均需住院修養一陣子，等待復原後，兩人生活即可恢復如常。
-				<br><br>
-				但移植者由於本身的免疫效果，身體將會去排斥來自捐贈者的那顆器官，輕重程度因人而異，往往還是要吃藥來減低排斥，但是比照移植前的生死
-				攸關，他們的生命已獲得改善。</h2>
-				  
-				  </hgroup>
-
-		  <button class="connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
-		  
-
-		</section>
-		<ul class="folding folded">
-		  <li class="fb">
-            <div class="content">
-                <h2>Radio (single choice)</h2>
-	  <input type="radio" name="r" id="pointer1" />
-	  <label for="pointer1" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 1</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer2" checked />
-	  <label for="pointer2" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 2</span>
-	  </label>
-	  <input type="radio" name="r" id="pointer3" />
-	  <label for="pointer3" class="move">
-		  <div data-type="pointer"></div>
-		  <span>Option 3</span>
-	  </label>
-            </div>
-        </li>
-        </ul>
-
-
-	</section>
-
-	
-
+     <!-- Test button robot -->
+    <button id="take-action-btn">Test Hover Robot</button>
+    <div id="robot-div">
+        <div id="robot-form-bg"></div>
+        <div class="foot-banner">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, adipisci, ipsa, nobis error non quam quasi facilis sed fugiat cum vero eos. Blanditiis, rem facere optio adipisci doloribus maxime a?</p>
+        </div>
+    </div>
 
     <!-- <section class="section" id="section9"> -->
+    <!-- Register Region -->
     <div class="container" id="section9">
-
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-
             <div id="take-action-div">
-                    <div class="action-steps step-type-1">
-                            <div class="circle-base ctype-1 step-icon">
-                                    <img src="../../assets/sign.png">
-                            </div>
-                            <div class="step-content">
-                                    <h3>簽署「器官捐贈同意卡」</h3>
-                                    <p>
-                                            表達器官捐贈意願，實務上尚無法條保障，也就是說，你的親屬可能拒絕醫生捐贈你的器官。
-                                    </p>
-                            </div>
-                            <!-- <p class="load-more">立刻簽署&nbsp;&nbsp; -->
-                            <a href="" class="scroller-arrow"></a>
-
+                <div class="action-steps step-type-1">
+                    <div class="circle-base ctype-1 step-icon">
+                        <img src="../../assets/sign.png">
                     </div>
-                    <div class="action-steps step-type-2">
-                            <div class="circle-base ctype-1 step-icon">
-                                    <img src="../../assets/register.png">
-                            </div>
-                            <div class="step-content">
-                                    <h3>登錄於「健保IC卡」</h3>
-                                    <p>
-                                            將「器官捐贈意願」加註於全民健康保險憑證(健保IC卡)，此為「具法律效力之同意」，與私下意願的表達全然不同。 <br>
-                                            請務必閱讀
-                                            <a href="http://www.organ.org.tw/">此說明</a>。
-                                    </p>
-                            </div>
-                            <a href="" class="scroller-arrow"></a>
+                    <div class="step-content">
+                        <h3>簽署「器官捐贈同意卡」</h3>
+                        <p>
+                            表達器官捐贈意願，實務上尚無法條保障，也就是說，您的親屬有權拒絕醫生捐贈您的器官。<br>
+                            但是，僅是表達對器官捐贈的意願，對於即是相當重要的支持。
+                        </p>
                     </div>
-                    <div class="action-steps step-type-3">
-                            <div class="circle-base ctype-1 step-icon">
-                                    <img src="../../assets/conversation.png">
-                            </div>
-                            <div class="step-content">
-                                    <h3>與最親的家人溝通</h3>
-                                    <p>
-                                        就，溝通 <3
-                                    </p>
-                            </div>
-                            <a href="" class="scroller-arrow"></a>
+                    <!-- <p class="load-more">立刻簽署&nbsp;&nbsp; -->
+                    <a href="" class="scroller-arrow"></a>
+                </div>
+                <div class="action-steps step-type-2">
+                    <div class="circle-base ctype-1 step-icon">
+                        <img src="../../assets/register.png">
                     </div>
+                    <div class="step-content">
+                        <h3>登錄於「健保IC卡」</h3>
+                        <p>
+                            將「器官捐贈意願」加註於全民健康保險憑證(健保IC卡)，此為「具法律效力之同意」，與私下意願的表達全然不同。 <br>
+                            請務必閱讀<a href="http://www.organ.org.tw/">此說明</a>。
+                        </p>
+                    </div>
+                    <a href="" class="scroller-arrow"></a>
+                </div>
+                <div class="action-steps step-type-3">
+                    <div class="circle-base ctype-1 step-icon">
+                        <img src="../../assets/conversation.png">
+                    </div>
+                    <div class="step-content">
+                        <h3>與最親的家人溝通</h3>
+                        <p>
+                            就，溝通 <3
+                        </p>
+                    </div>
+                    <a href="" class="scroller-arrow"></a>
+                </div>
             </div>
-            <div class="reg-form">
-            <%= form_for :article do |f| %>
-                <p>
-                    <%= f.label :姓名 %><br>
-                    <%= f.text_field :username %>
-                </p>
-                <p>
-                    <%= f.label :器捐同意卡卡號 %><br>
-                    <%= f.text_field :cardno, :placeholder => "新申請者免填" %>
-                </p>
-                <p>
-                    <%= f.label :生日 %><br>
-                    <%= f.text_field :birthdate, :placeholder => "yyyy/mm/dd" %>
-                </p>
-                <p>
-                    <%= f.label :身分證字號 %><br>
-                    <%= f.text_field :idno %>
-                </p>
-                <p>
-                    <%= f.label :聯絡電話 %><br>
-                    <%= f.text_field :tel %>
-                </p>
-                <p>
-                    <%= f.label :地址 %><br>
-                    <%= f.text_field :address %>
-                </p>
-                <!-- <p>
-                    <%= f.label :text %><br>
-                    <%= f.text_area :text %>
-                </p>
-             -->
+            <div class="reg-div">
+            <%= form_for :article, url: {action: "send_reg"}, html: {class: "reg-form"} do |f| %>
+                <div class="form-group">
+                    <%= f.label :cardno, "器捐同意卡卡號" %>
+                    <%= f.text_field :cardno, :class => "form-control", :placeholder => "新申請者免填" %>
+                </div>
+                <div class="form-group">
+                    <div class="inline-div-1">
+                        <%= f.label :username, "姓名" %>
+                        <%= f.text_field :username, :class => "form-control" %>
+                    </div>
+                    <div class="inline-div-1">
+                        <%= f.label :gender, "性別" %>
+                        <div class="form-control gender-radio horiz-radio">
+                            <%= f.label :male, "男" %>
+                            <%= f.radio_button :sex, "male" %>
+                        </div>
+                        <div class="form-control gender-radio horiz-radio">
+                            <%= f.label :female, "女" %>
+                            <%= f.radio_button :sex, "female" %>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <%= f.label :birthdate, "生日" %>
+                    <%= f.text_field :birthdate, :class => "form-control bdate-input", :placeholder => "yyyy/mm/dd" %>
+                </div>
+                <div class="form-group">
+                    <div class="inline-div-1">
+                        <%= f.label :nation, "國籍" %>
+                        <div class="form-control nation-radio horiz-radio">
+                            <%= f.label :home, "本國" %>
+                            <%= f.radio_button :nation, "home", :checked => true %>
+                        </div>
+                        <div class="form-control nation-radio horiz-radio">
+                            <%= f.label :foreign, "外國" %>
+                            <%= f.radio_button :nation, "foreign" %>
+                        </div>
+                    </div>
+                    <div class="inline-div-1">
+                        <%= f.label :idno, "身分證字號" %>
+                        <%= f.text_field :idno, :class => "form-control" %>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <%= f.label :tel, "聯絡電話" %>
+                    <%= f.text_field :tel, :class => "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :address, "通訊地址" %>
+                    <%= f.text_field :pcode, :class => "form-control postal-code", :placeholder => "郵遞區號" %>
+                    <span>-</span>
+                    <%= f.text_field :address, :class => "form-control address" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :email, "電子郵件" %>
+                    <%= f.text_field :email, :class => "form-control" %>
+                </div>
+                <div class="form-group">
+                    <%= f.label :addic, "健保卡加註意願" %>
+                    <div class="form-control ic-radio horiz-radio">
+                        <%= f.label :yesic, "同意" %>
+                        <%= f.radio_button :addic, "yesic"%>
+                    </div>
+                    <div class="form-control ic-radio horiz-radio">
+                        <%= f.label :noic, "不同意" %>
+                        <%= f.radio_button :addic, "noic" %>
+                        <br>
+                        <span>
+                            為保護您的基本權益，請先仔細閱讀
+                            <a href="#section9" id="addic-info">健保卡加註說明</a>。
+                        </span>
+                    </div>
+                </div>
                 <p>
                     <%= f.submit :value => "送出", :class => "btn button" %>
                 </p>
             <% end %>
             </div>
         </div>
-    <!-- </section> -->
     </div>
     <!-- /container -->
 
-	<!-- Footer -->
-		<div id="footer">
-			<div class="container">
-				<hr />
-				<div class="row">
-					<div class="12u">
-
-						<!-- Contact -->
-							<section class="contact">
-
-								<ul class="icons">
-									<li><a href="#" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-									<li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
-									<li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
-									<li><a href="#" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
-									<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
-									<li><a href="#" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
-								</ul>
-							</section>
-
-						<!-- Copyright -->
-							<div class="copyright">
-								<ul class="menu">
-									<li>&copy; Untitled. All rights reserved.</li>
-									<li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
-								</ul>
-							</div>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <hr />
+            <div class="row">
+                <div class="12u">
+                    <!-- Contact -->
+                    <section class="contact">
+                        <ul class="icons">
+                            <li><a href="#" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+                            <li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+                            <li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
+                            <li><a href="#" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
+                            <li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
+                            <li><a href="#" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
+                        </ul>
+                    </section>
+                    <!-- Copyright -->
+                    <div class="copyright">
+                        <ul class="menu">
+                            <li>&copy; Untitled. All rights reserved.</li>
+                            <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->

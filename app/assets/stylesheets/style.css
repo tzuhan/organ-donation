@@ -7,9 +7,9 @@
     font-style:normal
 }
 /*
-	Helios 1.5 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Helios 1.5 by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /*********************************************************************************/
@@ -17,38 +17,52 @@
 /* Basic                                                                         */
 
 /*********************************************************************************/
-
-	.icon{
-		margin: 50px;
-
-	}
-	.section{
-  position: relative;
-  margin: 0px;
-  width: 100%;
-  height: 520px;
-  text-align: center;
-  font-family: 'Andale Mono', arial, sans-serif;
-  background-color:#63CFD4;
-  color: #0C6F73;
-  line-height: 24px;
-  border: 1px solid #ddd;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+ .icon {
+    margin: 50px;
 }
-
-
-.section hgroup{
-
-  position:relative;
-  color: #3D3B42;
-  display: block;
-	height:300px;
-  margin: 0 auto 80px auto;
-  padding-bottom: 15px;
+#tinman{
+width: 60%;
+position: relative;
+left: -60%;
 }
-
+.tinmancontainer {
+    position: fixed;
+    width: 10%;
+    height: 60%;
+    right: 0px;
+    top: 15%;
+    background-color: #15FFE3;
+    z-index: 300;
+}
+.chapter {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+}
+.section {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    /*height: 520px;*/
+    text-align: center;
+    font-family:'Andale Mono', arial, sans-serif;
+    background-color:#63CFD4;
+    color: #0C6F73;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.section hgroup {
+    position:relative;
+    color: #3D3B42;
+    display: block;
+    height:300px;
+    margin: 0 auto 0 auto;
+    padding-bottom: 15px;
+}
 /* Demo only styles*/
  a {
     color: #444;
@@ -57,7 +71,6 @@
     text-align: center;
     padding-bottom: 1000px;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAD6CAMAAAA1MfELAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVFNTQxNEZENjY1QjExRTJCNzU4ODZFMTZBMEQ4Q0M2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVFNTQxNEZFNjY1QjExRTJCNzU4ODZFMTZBMEQ4Q0M2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUU1NDE0RkI2NjVCMTFFMkI3NTg4NkUxNkEwRDhDQzYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUU1NDE0RkM2NjVCMTFFMkI3NTg4NkUxNkEwRDhDQzYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5S9PU9AAAAP1BMVEXs7Oz////+/v7t7e329vbv7+/7+/vw8PD09PTu7u75+fn8/Pzz8/P19fXy8vL4+Pj9/f339/fx8fH6+vr////n0wjDAAAAFXRSTlP//////////////////////////wAr2X3qAAAD1klEQVR42uza2YLbIAwFUMBbvC/J/39rvcRYsgEpA2+Vn2aa9tSAgAsz6pPoUQIJJJBAAgkkkEACCSSQQAIJJJBAAv2XUFtOCaC2UuuTjbGQqdXxTJFQ83VUHgn1J7REQt0J1ZHQcELKxEGLhcpUb9SkgsZEnc0Y/yD0stArDsot1MVBs4WGOGhU/NIOQm8LVXFQa6EiDpoUf7IFIW2hLBKqU0GVfaVI6Id1JAx1qSC71tLLf7jxeSrIbiOqjYPe/LWW2GlTQcZC7zhIZ+zVn4CKVG9UsbcRAhpSQXYfmSMTW58KGtk7JAE1qaDyhPpIaEoFGfbmT0B2jkRDBTdFUFDFTREUNKSCukSQDW1LLJRzcw0FzdxcQ0FNKuidCmq5SYuCJm5AoiCTCtLcpEVCWSqoZiYtEipSQRUzaZFtX1JDbSzUMZNWSmgcRkOvbG8S2lacypBvREU2dUxvv9RzoY7Yt3oyaelmXvtG1cT/SEG632Zj1lioNuHV35O0yu8UqlVFHO3DkM1PtXoR4T4PJa3rYmBRJXEkD0HX4UnNChw3xxDUh+4XVGaUvr4t9E9QmV1QrpW+jgnB13+MxVRfTm02qAEvyIdAl6xFqDcInKVffOgFnG5F1Efr63jnWL5yd0BqFGrYAV0nDkee6p2ftKCj1XslPjtkMn9V9q6kZWAH9fqANmn0V2Xv+qADTrU7+1K7frF4q7J35BpQiSprd+eEWtBz7tEp3JW4jbyFNin3lcATgpW4lvThWAjUd+mEamclDqfz3Y7W78AqoF1Q5qrEwtwgXEx5CJrvHa0/N8hc92Cta6TvtyWgo+FOu/7J29m4Dl1FoY7ugQMhd+MGCJkCOAt0rr0fNQ6M3ACuosA6gToahwjUuMI8rutbPGCwox8QaJxdfqrrJWdfR99izda457J7QXAJUq+bg/IRKstzD7d0nt2nfAgCjftWE/zn12fT3cGJDTeuLtG9r7qtiToU/XDjshJe1/kq0QeBxq1hBY8UXhODYRQvKGs9ZawOcqRa3Djn07gcFwSuel1P53SeOfveuPuz74aswI62gudT6h8gPXud3uO4jhAa7XOMkfeeRda/Ozlnht0N+ZBunFCuf4J2qXM4hd/xHLPw7EUj9uN5zVngL/0n6FEDvlIMnyA1ypZH4Ak5/qMo3p6CJURCuJvaoBM4HGuUmva58cdTNuqmwvwdQtVUEg4F6W+gzimH+LHYOekWHQeddUl2EAvSYzXpWOiQNMOhL6KYDn1bkwz68BzOb/uwHPmNKIEEEkgggQQSSCCBBBJIIIEEEui/hv4JMAAD0sT0LCUdAgAAAABJRU5ErkJggg==) repeat-y center bottom;
-
 }
 /* CSS 3D list styles */
  .folding {
@@ -72,7 +85,7 @@
     perspective: 700px;
 }
 .folding li {
-    height: 180px;
+    height: 100px;
     color: #fff;
     padding-left: 30px;
     border-left: 30px solid rgba(0, 0, 0, .1);
@@ -84,37 +97,39 @@
     -ms-transition: ease .4s all;
     transition: ease .4s all;
 }
-
-
-.section strong{
-  color: #F21E52;
+.section strong {
+    color: #F21E52;
 }
-
-button{
-  position: relative;
-  top:-120px;
-  font-size: 18px;
-  border: none;
-  background: #ffffff;
-  padding: 13px 60px;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  cursor: pointer;}
-
+button.connect {
+    position: relative;
+    top:-30px;
+    font-size: 18px;
+    border: none;
+    color: #000;
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    padding: 13px 60px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
 .csstransforms3d .folding li:nth-child(even) {
-    margin-top: -1px;
+    margin-top: -5px;
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -o-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
-    -webkit-transform: rotateX(10deg);
-    -moz-transform: rotateX(10deg);
-    -o-transform: rotateX(10deg);
-    -ms-transform: rotateX(10deg);
-    transform: rotateX(10deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
 }
 .csstransforms3d .folding li:nth-child(odd) {
     -webkit-transform-origin: 50% 0%;
@@ -127,19 +142,12 @@ button{
     -o-transform: rotateX(0deg);
     -ms-transform: rotateX(0deg);
     transform: rotateX(0deg);
-
 }
-.folding .fb {
-    background-color: #3959a6;
+.folding .qttop {
+    background-color: #3358D3;
 }
-.folding .tw {
-    background-color: #2fc6ff;
-}
-.folding .gp {
-    background-color:#d84d30;
-}
-.folding .rss {
-    background-color: #ff7e09;
+.folding .qtbot {
+    background-color: #2C4AD3;
 }
 .rss-link {
     color: #fff;
@@ -153,7 +161,7 @@ button{
     padding: 15px 0;
 }
 .csstransforms3d .folded li:nth-child(even) {
-    /*margin-top: -75px;*/
+    margin-top: -200px;
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
@@ -166,16 +174,17 @@ button{
     background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
 }
 .csstransforms3d .folded li:nth-child(odd) {
-    -webkit-transform: rotateX(-97.3deg);
-    -moz-transform: rotateX(-100deg);
-    -o-transform: rotateX(-100deg);
-    -ms-transform: rotateX(-100deg);
-    transform: rotateX(-100deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
 }
 .csstransforms3d .folded .content {
     display: none;
 }
 /* Folding list heading */
+
 /* .connect {
     padding: 12px 0 12px 0px;
     color: #fff;
@@ -197,12 +206,11 @@ button{
 [class*="fontawesome-"]:hover::before {
     bottom: -10px;
 }
-
 .section h1, .section h2, .section h3, .section strong {
     font-weight: normal;
 }
 .section h1 {
-    font-family:"MStiffHeiHK-UltraBold";
+    font-family:"CSong3HK-Medium";
 }
 .section h1 {
     font-size: 40px;
@@ -238,16 +246,15 @@ button{
     transition: all 0.3s ease-out;
     cursor: pointer;
 }*/
-button:hover {
+ button:hover {
     outline: 6px solid #fcb509;
     color: #000;
-    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
-    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: linear-gradient(104deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FFF4DE', GradientType=1);
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF0CB), color-stop(51%, #FFF0CB), color-stop(100%, #ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FFF0CB', GradientType=1);
 }
 body.paused * {
     -moz-transition: none;
@@ -404,29 +411,29 @@ section.special > header, section.special > footer, article.special > header, ar
 /* Uncomment the block below if you want linked images to highlight on hover */
 
 /*
-			a.image:before
-			{
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
-				background: #fff;
-				opacity: 0;
-				-moz-transition: opacity 0.35s ease-in-out;
-				-webkit-transition: opacity 0.35s ease-in-out;
-				-o-transition: opacity 0.35s ease-in-out;
-				-ms-transition: opacity 0.35s ease-in-out;
-				transition: opacity 0.35s ease-in-out;
-			}
+            a.image:before
+            {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                opacity: 0;
+                -moz-transition: opacity 0.35s ease-in-out;
+                -webkit-transition: opacity 0.35s ease-in-out;
+                -o-transition: opacity 0.35s ease-in-out;
+                -ms-transition: opacity 0.35s ease-in-out;
+                transition: opacity 0.35s ease-in-out;
+            }
 
-				a.image:hover:before
-				{
-					opacity: 0.15;
-				}
-			*/
+                a.image:hover:before
+                {
+                    opacity: 0.15;
+                }
+            */
  .image img {
     display: block;
     width: 100%;
@@ -2156,9 +2163,10 @@ header .fa.circled {
 
 /*********************************************************************************/
  #banner {
-     padding: 4.5em 0 4.5em 0;
-    width: 600px;
+    padding: 4.5em 0 4.5em 0;
+    max-width: 600px;
     position: relative;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -2177,44 +2185,43 @@ header .fa.circled {
 /*********************************************************************************/
 
 /* Side-Bar                                                                        */
+
 /*********************************************************************************/
-	#scroll-icons{
-		background-color: transparent;
-		height: 40%;
-		z-index: 1001;
-		right: 50px;
-		left: auto;
-		position: fixed;
-		top: 35%;
-
-	}
-	.scroll-circle{
-		/*unclick, go transparent*/
-		width: 7px;
-		height: 7px;
-		border-radius: 7px;
-		border: 1px solid;
-		border-color: #666366;
-		background-color: transparent;
-		margin-bottom: 200%;
-		cursor: pointer;
-
-		/* width and height can be anything, as long as they're equal */
-	}
-	.clicked{
-		/*clickedblacken*/
-		width: 7px;
-		height: 7px;
-		border-radius: 7px;
-		border: 1px solid;
-		border-color: #666366;
-		background-color: rgb(102, 99, 102);
-		margin-bottom: 200%;
-		cursor: pointer;
-
-		/* width and height can be anything, as long as they're equal */
-	}
+ #scroll-icons {
+    background-color: transparent;
+    height: 40%;
+    z-index: 1001;
+    right: 50px;
+    left: auto;
+    position: fixed;
+    top: 35%;
+}
+.scroll-circle {
+    /*unclick, go transparent*/
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #666366;
+    background-color: transparent;
+    margin-bottom: 200%;
+    cursor: pointer;
+    /* width and height can be anything, as long as they're equal */
+}
+.clicked {
+    /*clickedblacken*/
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: #666366;
+    background-color: rgb(102, 99, 102);
+    margin-bottom: 200%;
+    cursor: pointer;
+    /* width and height can be anything, as long as they're equal */
+}
 /*********************************************************************************/
+
 /* Content                                                                       */
  #content {
 }

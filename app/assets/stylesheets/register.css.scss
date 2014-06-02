@@ -1,0 +1,101 @@
+// Place all the styles related to the register controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.reg-container {
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    background: url('squared_metal.png');
+}
+
+.action-steps {
+    margin: 50px auto;
+    padding: 20px;
+    width: 75%;
+    background-color: #ccc;
+    text-align: center;
+    & > * {
+        vertical-align: middle;
+    }
+    &.step-type-1 {
+    background-color: #dff0d8;
+    }
+    &.step-type-2 {
+        background-color: #fcf8e3;
+    }
+    &.step-type-3 {
+        background-color: #f2dede;
+    }
+}
+
+.step-icon {
+    margin: 0 2%;
+    width: 12%;
+    max-width: 120px;
+    height: 100%;
+    display: inline-block;
+    // float: left;
+    // text-align: center;
+    // font-size: 3em;
+    // line-height: 90px;
+}
+
+.step-content {
+    margin: 0 auto;
+    width: 80%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    h3 {
+        margin: 10px 0;
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+/*****************/
+/* register form */
+/*****************/
+.reg-div {
+    width: 75%;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url('ricepaper_v3.png');
+}
+
+.reg-form {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    label {
+        display: block;
+    }
+    div.inline-div-1 {
+        margin-right: 10px;
+        display: inline-block;
+    }
+    div.horiz-radio {
+        display: inline;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        label {
+            display: inline;
+        }
+    }
+    .postal-code {
+        display: inline;
+        width: 20%;
+    }
+    .address {
+        display: inline;
+        width: 75%;
+    }
+}
+
+div.datepicker.dropdown-menu {
+    width: 225px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
