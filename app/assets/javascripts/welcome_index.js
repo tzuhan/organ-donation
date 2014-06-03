@@ -62,15 +62,18 @@
 
 
         // Eric
-
         var robotDiv = $('#robot-div');
         $('#take-action-btn').on('click', triggerTakeAction);
-
         function triggerTakeAction(evt) {
             robotDiv.animate({
                 'height': '300px',
             });
         }
+
+        /* Info Graphics */
+
+
+
     });
 })();
 

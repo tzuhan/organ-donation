@@ -19,3 +19,4 @@
 //= require jquery.avgrund
 //= require spin
 //= require ladda
+//= require d3
