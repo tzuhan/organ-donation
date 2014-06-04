@@ -20,6 +20,7 @@
 
 .section {
     position: relative;
+    padding-bottom: 30px;
     margin: 0px;
     width: 100%;
     text-align: center;
@@ -73,9 +74,7 @@ button{
 
 button.connect {
     position: relative;
-	margin-left: auto;
-	margin-right: auto;
-    top:-30px;
+    /*top:-30px;*/
     font-size: 18px;
     border: none;
     color: #000;
@@ -400,7 +399,7 @@ article.special > footer
 .tinmanbox{
 	position: relative;
 	margin-left: 0px;
-	background-color: #334D5C;
+	background-color: rgba(51, 77, 82, 0.6);
 	width: 60px;
 	height: 100%;
 }
@@ -448,8 +447,7 @@ article.special > footer
 }
 .folding li {
     height: 150px;
-    color: #fff;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 }
 .csstransforms3d .folding li {
     -webkit-transition: ease .4s all;
@@ -487,13 +485,15 @@ article.special > footer
     -ms-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
+/*
 .qt{
 	display: block;
 	width: 1200px;
 	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
-}
+
+}*/
 .folding .qttop {
     background-color: #ED9E77;
 }
@@ -614,7 +614,7 @@ article.special > footer
     color: #E17A3F;
 }
 
-button:hover {
+button.connect:hover {
     outline: 6px solid #fcb509;
     color: #000;
     background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
@@ -2556,7 +2556,7 @@ header .fa.circled {
 /* Side-Bar                                                                        */
 
 /*********************************************************************************/
- #scroll-icons {
+#scroll-icons {
     background-color: transparent;
     height: 40%;
     z-index: 1001;
