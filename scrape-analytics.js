@@ -27,7 +27,7 @@
                     var row = {
                         title: title,
                         number: number
-                    }
+                    };
                 }
                 console.log(row);
             });

@@ -18,11 +18,46 @@
 
 /*********************************************************************************/
 
+
+.header{
+	text-decoration: none;
+}
+
+.icon {
+    margin: 50px;
+}
+#tinman{
+	width: 60%;
+	position: relative;
+	right: 0%;
+}
+.tinmancontainer {
+    position: fixed;
+    width: 10%;
+    height: 65%;
+    left: 5px;
+    top: 5%;
+    z-index: 10;
+}
+.tinmanbox{
+	position: relative;
+	margin-left: 0px;
+	background-color: #334D5C;
+	width: 60px;
+	height: 100%;
+}
+.tinmancontainer .icon{
+	position: relative;
+	width: 70%;
+	margin: 7px;
+	z-index: 9;
+}
+
 .chapter {
     display: block;
     height: 50px;
     width: 100%;
-    background-color: orange;
+    background-color: #EEC84C;
 }
 .section {
     position: relative;
@@ -31,7 +66,7 @@
     /*height: 520px;*/
     text-align: center;
     font-family:'Andale Mono', arial, sans-serif;
-    background-color:#63CFD4;
+    background-color:#45B19C;
     color: #0C6F73;
     /*line-height: 24px;*/
     border: 1px solid #ddd;
@@ -89,7 +124,7 @@ a {
     width:700px;
 }
 .section strong {
-    color: #ff7d23;
+    color: #E17A3F;
 }
 /*button {
     display: block;
@@ -2022,10 +2057,10 @@ header .fa.circled {
 }
 /*********************************************************************************/
 
-/* Banner                                                                        */
+/* Introduction                                                                       */
 
 /*********************************************************************************/
- #banner {
+ #intro {
     padding: 4.5em 0 4.5em 0;
     max-width: 600px;
     position: relative;

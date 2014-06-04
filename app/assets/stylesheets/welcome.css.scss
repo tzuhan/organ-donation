@@ -37,21 +37,6 @@ section.section {
     }
 }
 
-#tinman{
-    width: 60%;
-    position: relative;
-    left: -60%;
-}
-.tinmancontainer {
-    position: fixed;
-    width: 10%;
-    height: 60%;
-    right: 0px;
-    top: 15%;
-    background-color: #15FFE3;
-    z-index: 300;
-}
-
 /* CSS 3D list styles */
  .folding {
     list-style-type: none;
@@ -77,13 +62,12 @@ section.section {
     -ms-transition: ease .4s all;
     transition: ease .4s all;
 }
-// .section strong {
-//     color: #F21E52;
-// }
+.section strong {
+    color: #F21E52;
+}
 button.connect {
-    // position: relative;
-    // top:-30px;
-    margin: 20px auto;
+    position: relative;
+    top:-30px;
     font-size: 18px;
     border: none;
     color: #000;
@@ -125,10 +109,10 @@ button.connect {
     transform: rotateX(0deg);
 }
 .folding .qttop {
-    background-color: #3358D3;
+    background-color: #ED9E77;
 }
 .folding .qtbot {
-    background-color: #2C4AD3;
+    background-color: #E17A3F;
 }
 .rss-link {
     color: #fff;

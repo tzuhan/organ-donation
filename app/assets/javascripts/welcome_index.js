@@ -58,7 +58,7 @@
             var th = $(this);
             if (th.scrollTop() + th.height() - foldingListHeight >= 3*topElemOffset)
                 unfold();
-        })
+        });
 
 
         // Eric
@@ -211,12 +211,53 @@ function getDonationHistory() {
 
 
 $(document).ready(function() {
-  $('.tinmancontainer').css('right',-$('.tinmancontainer').outerWidth());
+  $('.tinmanbox').css('left',-$('.tinmanbox').outerWidth());
   $('#tinman').click(function() {
-    $('.tinmancontainer').animate({
-      right: parseInt($('.tinmancontainer').css('right'),10) == 0 ?
-        -$('.tinmancontainer').outerWidth() :
+    $('.tinmanbox').animate({
+      left: parseInt($('.tinmanbox').css('left'),10) == 0 ?
+        -$('.tinmanbox').outerWidth() :
         0
+
     });
+    //hide or show tinmanbox this.toggle();
   });
 });
+
+
+
+
+/*----------------------------------------------------*/
+// MENU SMOOTH SCROLLING by Han
+/*----------------------------------------------------*/  
+    $("scroll-circle, a.button.circled.scrolly").bind('click',function(event){
+		
+		//var headerH = $('nav').height();
+	   	// <footer>
+    	//  	<a href="#intro" class="button circled scrolly">開始</a>
+        // </footer>
+
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 1200,
+            easing: "easeInOutExpo"
+        });
+
+        return false;
+		event.preventDefault();
+    });
+	
+/*----------------------------------------------------*/
+// scroll icons by Han
+/*----------------------------------------------------*/  
+        $("#scroll-icons div").click(function(){
+            $("div.clicked").toggleClass('clicked');
+            $(this).toggleClass('clicked');
+            //smoooth scrolling
+            $("html, body").animate({
+            	scrollTop: $($(this).attr("href")).offset().top + "px"
+    		}, {
+		        duration: 1200,
+		        easing: "easeInOutExpo"
+        	});
+        });
