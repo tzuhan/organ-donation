@@ -97,8 +97,7 @@
 		var img2Height = $("#introimg2").offset().top;
 		var img3Height = $("#introimg3").offset().top;
 
-		$('#introimg1').stick_in_parent();
-		$('#introimg2').stick_in_parent();
+		
 		
     });
 })();

@@ -18,28 +18,28 @@
 /*********************************************************************************/
 
 
-.section{
-  position: relative;
-  margin: 40px;
-  width: 1200px;
-  height: 620px;
-  text-align: center;
-  font-family: 'Andale Mono', arial, sans-serif;
-  background-color:#FFF0E6;
-  line-height: 24px;
-  border: 1px solid #ddd;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.section {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    font-family:'Andale Mono', arial, sans-serif;
+    background-color: #45B19C;
+    color: #0C6F73;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 .section hgroup{
 
   position:relative;
-  background-color:#FFF0E6;
+  /*background-color:#FFF0E6;*/
   display: block;
-	height:300px;
+  height:300px;
   margin: 0 auto 80px auto;
   padding-bottom: 15px;
 }
@@ -50,9 +50,6 @@
 
 .section h1{
 	font-family:"MStiffHeiHK-UltraBold";
-}
-
-.section h1{
   font-size: 40px;
   line-height: 30px;
   margin: 0;
@@ -70,26 +67,30 @@
 .section strong{
   color: #ff7d23;
 }
-
 button{
-  display: block;
-  position: absolute;
-  top:530px;
-  left:480px;
-  outline: 6px solid #dddddd;
-  font-size: 18px;
-  color: #fcb509;
-  border: none;
-  background: #ffffff;
-  background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 50%,#ffffff 51%,#ffffff 100%);
-  padding: 13px 60px;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
+	margin: 0px 50px 0px 50px;
 }
 
+button.connect {
+    position: relative;
+	margin-left: auto;
+	margin-right: auto;
+    top:-30px;
+    font-size: 18px;
+    border: none;
+    color: #000;
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    padding: 13px 60px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
 button:hover{
     outline: 6px solid #fcb509;
     color: #000;
@@ -137,17 +138,17 @@ h1,h2,h3,h4,h5,h6
 	line-height: 1.25em;
 }
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
-	{
-		color: inherit;
-		text-decoration: none;
-		border-bottom-color: transparent;
-	}
-	
-	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
-	{
-		font-weight: 600;
-	}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+	color: inherit;
+	text-decoration: none;
+	border-bottom-color: transparent;
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
+{
+	font-weight: 600;
+}
 
 h2
 {
@@ -197,11 +198,11 @@ a
 	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 }
 
-	a:hover
-	{
-		color: #ef8376;
-		border-bottom-color: transparent;
-	}
+a:hover
+{
+	color: #ef8376;
+	border-bottom-color: transparent;
+}
 
 sub
 {
@@ -244,10 +245,10 @@ header
 	margin: 0 0 1em 0;
 }
 
-	header .byline
-	{
-		margin-bottom: 2em;
-	}
+header .byline
+{
+	margin-bottom: 2em;
+}
 	
 footer
 {
@@ -267,27 +268,27 @@ hr
 	border-bottom: solid 1px rgba(128,128,128,0.2);
 }
 
-	hr:before,
-	hr:after
-	{
-		content: '';
-		position: absolute;
-		top: -8px;
-		display: block;
-		width: 1px;
-		height: 21px;
-		background: rgba(128,128,128,0.2);			
-	}
+hr:before,
+hr:after
+{
+	content: '';
+	position: absolute;
+	top: -8px;
+	display: block;
+	width: 1px;
+	height: 21px;
+	background: rgba(128,128,128,0.2);			
+}
 
-	hr:before
-	{
-		left: -1px;
-	}
+hr:before
+{
+	left: -1px;
+}
 
-	hr:after
-	{
-		right: -1px;
-	}
+hr:after
+{
+	right: -1px;
+}
 
 .timestamp
 {
@@ -297,7 +298,6 @@ hr
 
 /* Sections/Articles */
 
-section,
 article
 {
 	margin-bottom: 3em;
@@ -416,22 +416,7 @@ article.special > footer
     width: 100%;
     background-color: #EEC84C;
 }
-.section {
-    position: relative;
-    margin: 0px;
-    width: 100%;
-    height: 600px;
-    text-align: center;
-    font-family:'Andale Mono', arial, sans-serif;
-    background-color: #45B19C;
-    color: #0C6F73;
-    line-height: 24px;
-    border: 1px solid #ddd;
-    z-index: 300;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 .section hgroup {
     position:relative;
     color: #3D3B42;
@@ -465,7 +450,6 @@ article.special > footer
     height: 150px;
     color: #fff;
     padding-left: 30px;
-    border-left: 30px solid rgba(0, 0, 0, .1);
 }
 .csstransforms3d .folding li {
     -webkit-transition: ease .4s all;
@@ -477,24 +461,7 @@ article.special > footer
 .section strong {
     color: #F21E52;
 }
-button.connect {
-    position: relative;
-    /*top:-30px;*/
-    font-size: 18px;
-    border: none;
-    color: #000;
-    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
-    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    padding: 13px 60px;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-}
+
 .csstransforms3d .folding li:nth-child(even) {
     margin-top: -5px;
     -webkit-transform-origin: 50% 100%;
@@ -520,10 +487,18 @@ button.connect {
     -ms-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
+.qt{
+	display: block;
+	width: 1200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .folding .qttop {
     background-color: #ED9E77;
 }
 .folding .qtbot {
+	padding-top: 30px;
     background-color: #E17A3F;
 }
 .rss-link {
@@ -573,37 +548,36 @@ button.connect {
 
 /*Answer block*/
  .answertext {
+ 	display: block;
     position: relative;
     top: 26px;
     font-family:"CSong3HK-Medium";
     font-size: 30px;
     color: white;
     text-align: center;
+    margin: 0px 0px 30px 0px;
 }
 .answer {
     width: 30%;
 }
 .as1 {
-    position: relative;
-    top: 50px;
-    left: 140px;
+    position: absolute;
+    left: 10%;
     z-index: 100;
 }
 .as2 {
-    position: relative;
-    top: 50px;
-    left: 230px;
+    position: absolute;
+    right: 10%;
     z-index: 100;
 }
 .as3 {
-    position: relative;
-    top: 30px;
-    left: 140px;
+    position: absolute;
+    left: 10%;
 }
 .as4 {
-    position: relative;
-    top: 30px;
-    left: 230px;
+    position: absolute;
+    right: 10%;
+
 }
 /* Font awesome styles */
 [class*="fontawesome-"]::before {
@@ -639,24 +613,7 @@ button.connect {
 .section strong {
     color: #E17A3F;
 }
-/*button {
-    display: block;
-    position: absolute;
-    top:530px;
-    left:480px;
-    outline: 6px solid #dddddd;
-    font-size: 18px;
-    color: #fcb509;
-    border: none;
-    background: #ffffff;
-    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 50%, #ffffff 51%, #ffffff 100%);
-    padding: 13px 60px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    cursor: pointer;
-}*/
+
 button:hover {
     outline: 6px solid #fcb509;
     color: #000;
@@ -798,7 +755,7 @@ hr:after {
     font-size: 0.8em;
 }
 /* Sections/Articles */
- section, article {
+section, article {
     margin-bottom: 3em;
 }
 section > :last-child, article > :last-child {
@@ -997,7 +954,7 @@ table.style1 tfoot {
 table.style1 tbody {
 }
 /* Buttons */
- .button {
+.button {
     position: relative;
     display: inline-block;
     background: #df7366;
