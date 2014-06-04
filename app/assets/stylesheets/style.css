@@ -13,6 +13,363 @@
 */
 
 /*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+
+.section{
+  position: relative;
+  margin: 40px;
+  width: 1200px;
+  height: 620px;
+  text-align: center;
+  font-family: 'Andale Mono', arial, sans-serif;
+  background-color:#FFF0E6;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.section hgroup{
+
+  position:relative;
+  background-color:#FFF0E6;
+  display: block;
+	height:300px;
+  margin: 0 auto 80px auto;
+  padding-bottom: 15px;
+}
+
+.section h1, .section h2, .section h3, .section strong{
+  font-weight: normal;
+}
+
+.section h1{
+	font-family:"MStiffHeiHK-UltraBold";
+}
+
+.section h1{
+  font-size: 40px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.section h2, .section h3{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+  font-size: 18px;
+  width:700px;
+}
+
+.section strong{
+  color: #ff7d23;
+}
+
+button{
+  display: block;
+  position: absolute;
+  top:530px;
+  left:480px;
+  outline: 6px solid #dddddd;
+  font-size: 18px;
+  color: #fcb509;
+  border: none;
+  background: #ffffff;
+  background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 50%,#ffffff 51%,#ffffff 100%);
+  padding: 13px 60px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+button:hover{
+    outline: 6px solid #fcb509;
+    color: #000;
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(51%,#FFF4DE), color-stop(51%,#FFF4DE), color-stop(100%,#ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    background: linear-gradient(104deg, #ffffff 0%,#ffffff 51%,#FFF4DE 51%,#FFF4DE 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#FFF4DE',GradientType=1 ); 
+}
+
+
+
+
+
+
+body.paused *
+{
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
+
+body
+{
+	background: #f0f4f4;
+	color: #5b5b5b;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+}
+
+body,input,textarea,select
+{
+	font-size: 15pt;
+	line-height: 1.85em;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: 400;
+	color: #483949;
+	line-height: 1.25em;
+}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+	{
+		color: inherit;
+		text-decoration: none;
+		border-bottom-color: transparent;
+	}
+	
+	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
+	{
+		font-weight: 600;
+	}
+
+h2
+{
+	font-size: 2.85em;
+}
+
+
+h3
+{
+	font-size: 1.25em;
+}
+
+h4
+{
+	font-size: 1em;
+	margin: 0 0 0.25em 0;
+}
+
+.byline
+{
+	display: block;
+	font-size: 1.5em;
+	margin-top: 1em;
+	line-height: 1.5em;
+}
+
+strong, b
+{
+	font-weight: 400;
+	color: #483949;
+}
+
+em, i
+{
+	font-style: italic;
+}
+
+a
+{
+	color: inherit;
+	border-bottom: solid 1px rgba(128,128,128,0.15);
+	text-decoration: none;
+	-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+}
+
+	a:hover
+	{
+		color: #ef8376;
+		border-bottom-color: transparent;
+	}
+
+sub
+{
+	position: relative;
+	top: 0.5em;
+	font-size: 0.8em;
+}
+
+sup
+{
+	position: relative;
+	top: -0.5em;
+	font-size: 0.8em;
+}
+
+blockquote
+{
+	border-left: solid 0.5em #ddd;
+	padding: 1em 0 1em 2em;
+	font-style: italic;
+}
+
+p, ul, ol, dl, table
+{
+	margin-bottom: 1em;
+}
+
+p
+{
+	text-align: justify;
+}
+
+br.clear
+{
+	clear: both;
+}
+
+header
+{
+	margin: 0 0 1em 0;
+}
+
+	header .byline
+	{
+		margin-bottom: 2em;
+	}
+	
+footer
+{
+	margin: 2.5em 0 0 0;
+}
+	
+hr
+{
+	position: relative;
+	display: block;
+	border: 0;
+	top: 4.5em;
+	margin-bottom: 9em;
+
+	height: 6px;
+	border-top: solid 1px rgba(128,128,128,0.2);
+	border-bottom: solid 1px rgba(128,128,128,0.2);
+}
+
+	hr:before,
+	hr:after
+	{
+		content: '';
+		position: absolute;
+		top: -8px;
+		display: block;
+		width: 1px;
+		height: 21px;
+		background: rgba(128,128,128,0.2);			
+	}
+
+	hr:before
+	{
+		left: -1px;
+	}
+
+	hr:after
+	{
+		right: -1px;
+	}
+
+.timestamp
+{
+	color: rgba(128,128,128,0.75);
+	font-size: 0.8em;
+}
+
+/* Sections/Articles */
+
+	section,
+	article
+	{
+		margin-bottom: 3em;
+	}
+	
+	section > :last-child,
+	article > :last-child
+	{
+		margin-bottom: 0;
+	}
+
+	section:last-child,
+	article:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.row > section,
+	.row > article
+	{
+		margin-bottom: 0;
+	}
+
+	section.special > header,
+	section.special > footer,
+	article.special > header,
+	article.special > footer
+	{
+		text-align: center;
+	}
+
+/* Images */
+
+	.image
+	{
+		position: relative;
+		display: inline-block;
+		border: 0;
+		outline: 0;
+	}
+	
+		/* Uncomment the block below if you want linked images to highlight on hover */
+	
+		/*
+		a.image:before
+		{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			opacity: 0;
+			-moz-transition: opacity 0.35s ease-in-out;
+			-webkit-transition: opacity 0.35s ease-in-out;
+			-o-transition: opacity 0.35s ease-in-out;
+			-ms-transition: opacity 0.35s ease-in-out;
+			transition: opacity 0.35s ease-in-out;
+		}
+		
+			a.image:hover:before
+			{
+				opacity: 0.15;
+			}
+		*/
+	
+		.image img
+		{
+			display: block;
+			width: 100%;
+		}
 
 /* Basic                                                                         */
 
