@@ -71,11 +71,144 @@
         }
 
         /* Info Graphics */
+        var donut = new DonutChart('waiting-donut');
+        var fakeData = getCurrentWaitingData();
+        donut.create(fakeData);
 
+        var bowl = new Bowls('don-rate-chart');
+        var fakeDon = getIntlDonationRate();
+        bowl.create(fakeDon);
 
+        var line = new Lines('don-history');
+        var fakeHist = getDonationHistory();
+        line.create(fakeHist);
 
     });
 })();
+
+function getCurrentWaitingData() {
+    return [
+        {
+            title: '等候移植人數',
+            total: 8466,
+            unit: '人',
+            sub: [
+                { organ: '心臟', number: 169 },
+                { organ: '肺臟', number: 19 },
+                { organ: '肝臟', number: 1213 },
+                { organ: '腎臟', number: 6306 },
+                { organ: '胰臟', number: 89 },
+                { organ: '腸', number: 4 },
+                { organ: '眼角膜', number: 737 }
+            ],
+        }
+    ];
+}
+
+function getIntlDonationRate() {
+    return [
+        {
+            nation: '台灣',
+            waiting: 8000,
+            donation: 800,
+        },
+        {
+            nation: '美國',
+            waiting: 117000,
+            donation: 30000,
+        },
+        {
+            nation: '日本',
+            waiting: 55000,
+            donation: 2000,
+        }
+    ];
+}
+
+// function getDonationHistory() {
+//     return [
+//         {
+//             time: new Date('2009'),
+//             cat: 0,
+//             data: {
+//                 type: 0,
+//                 val: 797,
+//             }
+//         },
+//         {
+//             time: new Date('2008'),
+//             cat: 0,
+//             data: {
+//                 type: 0,
+//                 val: 728,
+//             }
+//         },
+//         {
+//             time: new Date('2007'),
+//             cat: 0,
+//             data: {
+//                 type: 0,
+//                 val: 337,
+//             }
+//         },
+//         {
+//             time: new Date('2006'),
+//             cat: 0,
+//             data: {
+//                 type: 0,
+//                 val: 288,
+//             }
+//         },
+//         /*{
+//             year: 2005,
+//             donation: 285
+//         },
+//         {
+//             year: 2004,
+//             donation: 323
+//         },*/
+//     ];
+// }
+function getDonationHistory() {
+    return [
+        {
+            type: 0,
+            data: [
+                { time: new Date('2009'), val: 797 },
+                { time: new Date('2008'), val: 728 },
+                { time: new Date('2007'), val: 337 },
+                { time: new Date('2006'), val: 288 },
+                { time: new Date('2005'), val: 285 },
+            ]
+        },
+        {
+            type: 1,
+            data: [
+                { time: new Date('2009'), val: 97 },
+                { time: new Date('2008'), val: 72 },
+                { time: new Date('2007'), val: 37 },
+                { time: new Date('2006'), val: 88 },
+                { time: new Date('2005'), val: 85 },
+            ]
+        },
+        {
+            type: 2,
+            data: [
+                { time: new Date('2009'), val: 222 },
+                { time: new Date('2008'), val: 722 },
+                { time: new Date('2007'), val: 370 },
+                { time: new Date('2006'), val: 302 },
+                { time: new Date('2005'), val: 540 },
+            ]
+        },
+        /*
+        {
+            year: 2004,
+            donation: 323
+        },*/
+    ];
+}
+
 
 $(document).ready(function() {
   $('.tinmancontainer').css('right',-$('.tinmancontainer').outerWidth());

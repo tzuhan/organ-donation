@@ -99,13 +99,21 @@
     <section class="section" id="section3">
         <%= image_tag('Organs_bone.png', :class => "icon")%>
         <hgroup >
-            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1><br><br>
+            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1>
+            <!-- <br><br>
             <h2>
                 少數器官可以「活體捐贈」。<br><br>
                 比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。<br><br>
                 在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。
-            </h2>
+            </h2> -->
         </hgroup>
+        <div class="content-wrapper">
+            <p>
+                少數器官可以「活體捐贈」。<br><br>
+                比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。<br><br>
+                在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。
+            </p>
+        </div>
         <button class="bt3 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
     </section>
     <ul class="qt3 folding folded">
@@ -114,17 +122,25 @@
     </ul>
 
     <div class="chapter"></div>
-    <section class="section" id="section4">
+    <section class="section inline" id="section4">
         <%= image_tag('Organs_intestine.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1><br><br>
+            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1>
+            <!-- <br><br>
             <h2>
                 根據「財團法人器官捐贈移植登錄中心」的登記，<br>
                 截至103年5月止，共有8,513個在等待器官移植的人。<br><br>
-                每年都有數百人的增加。
-            </h2>
+                每年都有數百人的增加
+            </h2> -->
         </hgroup>
-        <div id="waiting-donut"></div>
+        <div class="content-wrapper inline">
+            <p class="content">
+                根據「財團法人器官捐贈移植登錄中心」的登記，<br>
+                截至103年5月止，共有8,466個在等待器官移植的人。<br><br>
+                每年都有數百人的增加。
+            </p>
+            <div id="waiting-donut"></div>
+        </div>
         <button class="bt4 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
     </section>
     <ul class="qt4 folding folded">
@@ -136,7 +152,8 @@
     <section class="section" id="section5">
         <%= image_tag('Organs_kidney.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1><br><br>
+            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1>
+            <!-- <br><br>
             <h2>
                 台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！<br><br>
                 （圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）<br><br>
@@ -144,8 +161,20 @@
                 數據：
                 a.
                 行政院衛生署
-            </h2>
+            </h2> -->
         </hgroup>
+        <div class="content-wrapper">
+            <p class="content">
+                台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！<br><br>
+                （圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）<br><br>
+                如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。<br><br>
+                數據：
+                a.
+                行政院衛生署
+            </p>
+            <div id="don-rate-chart"></div>
+            <div id="don-history"></div>
+        </div>
         <button class="bt5 connect">&nbsp&nbsp挑戰&nbsp&nbsp</button>
     </section>
     <ul class="qt5 folding folded">

@@ -12,6 +12,188 @@
     }
 }
 
+section.section {
+    .icon {
+        margin: 20px auto;
+    }
+    div.content-wrapper {
+        margin: 20px auto;
+        width: 80%;
+        p, div {
+            vertical-align: top;
+        }
+        &.inline {
+            p, div {
+                width: 49%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.4em;
+            color: #000000;
+        }
+    }
+}
+
+#tinman{
+    width: 60%;
+    position: relative;
+    left: -60%;
+}
+.tinmancontainer {
+    position: fixed;
+    width: 10%;
+    height: 60%;
+    right: 0px;
+    top: 15%;
+    background-color: #15FFE3;
+    z-index: 300;
+}
+
+/* CSS 3D list styles */
+ .folding {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.csstransforms3d .folding {
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    -ms-perspective: 700px;
+    perspective: 700px;
+}
+.folding li {
+    height: 100px;
+    color: #fff;
+    padding-left: 30px;
+    border-left: 30px solid rgba(0, 0, 0, .1);
+}
+.csstransforms3d .folding li {
+    -webkit-transition: ease .4s all;
+    -moz-transition: ease .4s all;
+    -o-transition: ease .4s all;
+    -ms-transition: ease .4s all;
+    transition: ease .4s all;
+}
+// .section strong {
+//     color: #F21E52;
+// }
+button.connect {
+    // position: relative;
+    // top:-30px;
+    margin: 20px auto;
+    font-size: 18px;
+    border: none;
+    color: #000;
+    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
+    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
+    padding: 13px 60px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.csstransforms3d .folding li:nth-child(even) {
+    margin-top: -5px;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.csstransforms3d .folding li:nth-child(odd) {
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+.folding .qttop {
+    background-color: #3358D3;
+}
+.folding .qtbot {
+    background-color: #2C4AD3;
+}
+.rss-link {
+    color: #fff;
+    font: .9em Arial, Helvetica;
+}
+.folding .content {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    padding: 15px 0;
+}
+.csstransforms3d .folded li:nth-child(even) {
+    margin-top: -200px;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, .5));
+}
+.csstransforms3d .folded li:nth-child(odd) {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+.csstransforms3d .folded .content {
+    display: none;
+}
+/* Folding list heading */
+
+/* .connect {
+    padding: 12px 0 12px 0px;
+    color: #fff;
+    border-left: 30px solid rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font: bold .9em'Lucida sans unicode', Arial, Helvetica;
+    background-color: #555;
+}*/
+
+/* Chart style */
+#don-history {
+    margin: 0 auto;
+    width: 82%;
+    border: 1px solid #888888;
+    box-shadow: 0px 0px 5px #888888;
+    background-color: #ffffff;
+}
+.axis {
+    path {
+        fill: none;
+        shape-rendering: crispEdges;
+    }
+    line {
+        @extend path;
+        stroke: #888888;
+    }
+}
+
 /* from bootstrap */
 .bs-callout {
   margin: 20px 0;
