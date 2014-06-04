@@ -13,7 +13,6 @@
 */
 
 /*********************************************************************************/
-
 /* Basic                                                                         */
 /*********************************************************************************/
 .header{
@@ -49,6 +48,7 @@
     margin: 7px;
     z-index: 9;
 }
+
 .chapter {
     display: block;
     height: 50px;
@@ -70,261 +70,20 @@
     font-family:'Andale Mono', arial, sans-serif;
     background-color: #45B19C;
     color: #0C6F73;
-    line-height: 24px;
+    /*line-height: 24px;*/
     border: 1px solid #ddd;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
-.section hgroup{
-
-  position:relative;
-  /*background-color:#FFF0E6;*/
-  display: block;
-  height:300px;
-  margin: 0 auto 80px auto;
-  padding-bottom: 15px;
-}
-
-.section h1, .section h2, .section h3, .section strong{
-  font-weight: normal;
-}
-
-.section h1{
-	font-family:"MStiffHeiHK-UltraBold";
-  font-size: 40px;
-  line-height: 30px;
-  margin: 0;
-}
-
-.section h2, .section h3{
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-  font-size: 18px;
-  width:700px;
-}
-
-.section strong{
-  color: #ff7d23;
-}
-button{
-	margin: 0px 50px 0px 50px;
-}
-
-button.connect {
-    position: relative;
-    /*top:-30px;*/
-    font-size: 18px;
-    border: none;
-    color: #000;
-    background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(51%, #FFF4DE), color-stop(51%, #FFF4DE), color-stop(100%, #ffe19f));
-    background: -webkit-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -o-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    background: -ms-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF4DE 51%, #FFF4DE 100%);
-    padding: 13px 60px;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-}
-
-
-
-
-
-
-body.paused *
-{
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	-ms-transition: none;
-	transition: none;
-}
-
-body
-{
-	background: #f0f4f4;
-	color: #5b5b5b;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 300;
-}
-
-body,input,textarea,select
-{
-	font-size: 15pt;
-	line-height: 1.85em;
-}
-
-h1,h2,h3,h4,h5,h6
-{
-	font-weight: 400;
-	color: #483949;
-	line-height: 1.25em;
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
-{
-	color: inherit;
-	text-decoration: none;
-	border-bottom-color: transparent;
-}
-
-h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong
-{
-	font-weight: 600;
-}
-
-h2
-{
-	font-size: 2.85em;
-}
-
-
-h3
-{
-	font-size: 1.25em;
-}
-
-h4
-{
-	font-size: 1em;
-	margin: 0 0 0.25em 0;
-}
-
-.byline
-{
-	display: block;
-	font-size: 1.5em;
-	margin-top: 1em;
-	line-height: 1.5em;
-}
-
-strong, b
-{
-	font-weight: 400;
-	color: #483949;
-}
-
-em, i
-{
-	font-style: italic;
-}
-
-a
-{
-	color: inherit;
-	border-bottom: solid 1px rgba(128,128,128,0.15);
-	text-decoration: none;
-	-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	-o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
-}
-
-a:hover
-{
-	color: #ef8376;
-	border-bottom-color: transparent;
-}
-
-sub
-{
-	position: relative;
-	top: 0.5em;
-	font-size: 0.8em;
-}
-
-sup
-{
-	position: relative;
-	top: -0.5em;
-	font-size: 0.8em;
-}
-
-blockquote
-{
-	border-left: solid 0.5em #ddd;
-	padding: 1em 0 1em 2em;
-	font-style: italic;
-}
-
-p, ul, ol, dl, table
-{
-	margin-bottom: 1em;
-}
-
-p
-{
-	text-align: justify;
-}
-
-br.clear
-{
-	clear: both;
-}
-
-header
-{
-	margin: 0 0 1em 0;
-}
-
-header .byline
-{
-	margin-bottom: 2em;
-}
-
-footer
-{
-	margin: 2.5em 0 0 0;
-}
-
-hr
-{
-	position: relative;
-	display: block;
-	border: 0;
-	top: 4.5em;
-	margin-bottom: 9em;
-
-	height: 6px;
-	border-top: solid 1px rgba(128,128,128,0.2);
-	border-bottom: solid 1px rgba(128,128,128,0.2);
-}
-
-hr:before,
-hr:after
-{
-	content: '';
-	position: absolute;
-	top: -8px;
-	display: block;
-	width: 1px;
-	height: 21px;
-	background: rgba(128,128,128,0.2);
-}
-
-hr:before
-{
-	left: -1px;
-}
-
-hr:after
-{
-	right: -1px;
-}
-
-.timestamp
-{
-	color: rgba(128,128,128,0.75);
-	font-size: 0.8em;
+.section hgroup {
+    /*position:relative;*/
+    color: #3D3B42;
+    display: block;
+    /*height:300px;*/
+    margin: 10px auto;
+    /*padding-bottom: 15px;*/
 }
 
 /* Sections/Articles */
@@ -409,7 +168,7 @@ article.special > footer
 /*********************************************************************************/
 
 /* Demo only styles*/
- a {
+a {
     color: #444;
 }
 .custom-headline {
@@ -417,6 +176,7 @@ article.special > footer
     padding-bottom: 1000px;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAAD6CAMAAAA1MfELAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVFNTQxNEZENjY1QjExRTJCNzU4ODZFMTZBMEQ4Q0M2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVFNTQxNEZFNjY1QjExRTJCNzU4ODZFMTZBMEQ4Q0M2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUU1NDE0RkI2NjVCMTFFMkI3NTg4NkUxNkEwRDhDQzYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUU1NDE0RkM2NjVCMTFFMkI3NTg4NkUxNkEwRDhDQzYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5S9PU9AAAAP1BMVEXs7Oz////+/v7t7e329vbv7+/7+/vw8PD09PTu7u75+fn8/Pzz8/P19fXy8vL4+Pj9/f339/fx8fH6+vr////n0wjDAAAAFXRSTlP//////////////////////////wAr2X3qAAAD1klEQVR42uza2YLbIAwFUMBbvC/J/39rvcRYsgEpA2+Vn2aa9tSAgAsz6pPoUQIJJJBAAgkkkEACCSSQQAIJJJBAAv2XUFtOCaC2UuuTjbGQqdXxTJFQ83VUHgn1J7REQt0J1ZHQcELKxEGLhcpUb9SkgsZEnc0Y/yD0stArDsot1MVBs4WGOGhU/NIOQm8LVXFQa6EiDpoUf7IFIW2hLBKqU0GVfaVI6Id1JAx1qSC71tLLf7jxeSrIbiOqjYPe/LWW2GlTQcZC7zhIZ+zVn4CKVG9UsbcRAhpSQXYfmSMTW58KGtk7JAE1qaDyhPpIaEoFGfbmT0B2jkRDBTdFUFDFTREUNKSCukSQDW1LLJRzcw0FzdxcQ0FNKuidCmq5SYuCJm5AoiCTCtLcpEVCWSqoZiYtEipSQRUzaZFtX1JDbSzUMZNWSmgcRkOvbG8S2lacypBvREU2dUxvv9RzoY7Yt3oyaelmXvtG1cT/SEG632Zj1lioNuHV35O0yu8UqlVFHO3DkM1PtXoR4T4PJa3rYmBRJXEkD0HX4UnNChw3xxDUh+4XVGaUvr4t9E9QmV1QrpW+jgnB13+MxVRfTm02qAEvyIdAl6xFqDcInKVffOgFnG5F1Efr63jnWL5yd0BqFGrYAV0nDkee6p2ftKCj1XslPjtkMn9V9q6kZWAH9fqANmn0V2Xv+qADTrU7+1K7frF4q7J35BpQiSprd+eEWtBz7tEp3JW4jbyFNin3lcATgpW4lvThWAjUd+mEamclDqfz3Y7W78AqoF1Q5qrEwtwgXEx5CJrvHa0/N8hc92Cta6TvtyWgo+FOu/7J29m4Dl1FoY7ugQMhd+MGCJkCOAt0rr0fNQ6M3ACuosA6gToahwjUuMI8rutbPGCwox8QaJxdfqrrJWdfR99izda457J7QXAJUq+bg/IRKstzD7d0nt2nfAgCjftWE/zn12fT3cGJDTeuLtG9r7qtiToU/XDjshJe1/kq0QeBxq1hBY8UXhODYRQvKGs9ZawOcqRa3Djn07gcFwSuel1P53SeOfveuPuz74aswI62gudT6h8gPXud3uO4jhAa7XOMkfeeRda/Ozlnht0N+ZBunFCuf4J2qXM4hd/xHLPw7EUj9uN5zVngL/0n6FEDvlIMnyA1ypZH4Ak5/qMo3p6CJURCuJvaoBM4HGuUmva58cdTNuqmwvwdQtVUEg4F6W+gzimH+LHYOekWHQeddUl2EAvSYzXpWOiQNMOhL6KYDn1bkwz68BzOb/uwHPmNKIEEEkgggQQSSCCBBBJIIIEEEui/hv4JMAAD0sT0LCUdAgAAAABJRU5ErkJggg==) repeat-y center bottom;
 }
+
 /* CSS 3D list styles */
  .folding {
     list-style-type: none;
@@ -527,6 +287,7 @@ article.special > footer
     background-color: #555;
 }*/
 
+
 /*Answer block*/
  .answertext {
  	display: block;
@@ -580,7 +341,7 @@ article.special > footer
 }
 .section h1 {
     font-size: 40px;
-    line-height: 30px;
+    /*line-height: 30px;*/
     margin: 0;
 }
 .section h2, .section h3 {

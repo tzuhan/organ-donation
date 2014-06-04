@@ -4,9 +4,11 @@ class UserMailer < ActionMailer::Base
   def welcome_email(userdata)
     #@user = user
     #@url  = 'http://example.com/login'
+    #puts (@userdata)
+    #puts ('call welcome_email success')
+
     @userdata = userdata
     puts (@userdata)
-		puts ('call welcome_email success')
-    #mail(to: 'chiupotsung@gmail.com', subject: 'Organ Donation Card Registered')
+    mail(to: 'chiupotsung@gmail.com', subject: '器官捐贈同意卡 -- 新簽署者')
   end
 end

@@ -123,13 +123,15 @@
     <section class="section" id="section3">
         <%= image_tag('Organs_intestine.png', :class => "icon")%>
         <hgroup >
-            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1><br><br>
-            <h2>
+            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1>
+        </hgroup>
+        <div class="content-wrapper">
+            <p>
                 少數器官可以「活體捐贈」。<br><br>
                 比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。<br><br>
                 在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。
-            </h2>
-        </hgroup>
+            </p>
+        </div>
         <button class="bt3 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt3 folding folded">
@@ -144,16 +146,19 @@
     </ul>
 
     <div class="chapter"><p class="chptitle">Chapter 4</p></div>
-    <section class="section" id="section4">
+    <section class="section inline" id="section4">
         <%= image_tag('Organs_kidney.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1><br><br>
-            <h2>
-                根據「財團法人器官捐贈移植登錄中心」的登記，<br>
-                截至103年5月止，共有8,513個在等待器官移植的人。<br><br>
-                每年都有數百人的增加。
-            </h2>
+            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1>
         </hgroup>
+        <div class="content-wrapper inline">
+            <p class="content">
+                根據「財團法人器官捐贈移植登錄中心」的登記，<br>
+                截至103年5月止，共有8,466個在等待器官移植的人。<br><br>
+                每年都有數百人的增加。
+            </p>
+            <div id="waiting-donut"></div>
+        </div>
         <button class="bt4 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt4 folding folded">
@@ -171,16 +176,20 @@
     <section class="section" id="section5">
         <%= image_tag('Organs_liver.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1><br><br>
-            <h2>
+            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1>
+        </hgroup>
+        <div class="content-wrapper">
+            <p class="content">
                 台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！<br><br>
                 （圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）<br><br>
                 如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。<br><br>
                 數據：
                 a.
                 行政院衛生署
-            </h2>
-        </hgroup>
+            </p>
+            <div id="don-rate-chart"></div>
+            <div id="don-history"></div>
+        </div>
         <button class="bt5 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt5 folding folded">
@@ -273,136 +282,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, adipisci, ipsa, nobis error non quam quasi facilis sed fugiat cum vero eos. Blanditiis, rem facere optio adipisci doloribus maxime a?</p>
         </div>
     </div>
-
-    <!-- <section class="section" id="section9"> -->
-    <!-- Register Region -->
-    <div class="container" id="section9">
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div id="take-action-div">
-                <div class="action-steps step-type-1">
-                    <div class="circle-base ctype-1 step-icon">
-                        <img src="../../assets/sign.png">
-                    </div>
-                    <div class="step-content">
-                        <h3>簽署「器官捐贈同意卡」</h3>
-                        <p>
-                            表達器官捐贈意願，實務上尚無法條保障，也就是說，您的親屬有權拒絕醫生捐贈您的器官。<br>
-                            但是，僅是表達對器官捐贈的意願，對於即是相當重要的支持。
-                        </p>
-                    </div>
-                    <!-- <p class="load-more">立刻簽署&nbsp;&nbsp; -->
-                    <a href="" class="scroller-arrow"></a>
-                </div>
-                <div class="action-steps step-type-2">
-                    <div class="circle-base ctype-1 step-icon">
-                        <img src="../../assets/register.png">
-                    </div>
-                    <div class="step-content">
-                        <h3>登錄於「健保IC卡」</h3>
-                        <p>
-                            將「器官捐贈意願」加註於全民健康保險憑證(健保IC卡)，此為「具法律效力之同意」，與私下意願的表達全然不同。 <br>
-                            請務必閱讀<a href="http://www.organ.org.tw/">此說明</a>。
-                        </p>
-                    </div>
-                    <a href="" class="scroller-arrow"></a>
-                </div>
-                <div class="action-steps step-type-3">
-                    <div class="circle-base ctype-1 step-icon">
-                        <img src="../../assets/conversation.png">
-                    </div>
-                    <div class="step-content">
-                        <h3>與最親的家人溝通</h3>
-                        <p>
-                            就，溝通 <3
-                        </p>
-                    </div>
-                    <a href="" class="scroller-arrow"></a>
-                </div>
-            </div>
-            <div class="reg-div">
-            <%= form_for :article, url: {action: "send_reg"}, html: {class: "reg-form"} do |f| %>
-                <div class="form-group">
-                    <%= f.label :cardno, "器捐同意卡卡號" %>
-                    <%= f.text_field :cardno, :class => "form-control", :placeholder => "新申請者免填" %>
-                </div>
-                <div class="form-group">
-                    <div class="inline-div-1">
-                        <%= f.label :username, "姓名" %>
-                        <%= f.text_field :username, :class => "form-control" %>
-                    </div>
-                    <div class="inline-div-1">
-                        <%= f.label :gender, "性別" %>
-                        <div class="form-control gender-radio horiz-radio">
-                            <%= f.label :male, "男" %>
-                            <%= f.radio_button :sex, "male" %>
-                        </div>
-                        <div class="form-control gender-radio horiz-radio">
-                            <%= f.label :female, "女" %>
-                            <%= f.radio_button :sex, "female" %>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <%= f.label :birthdate, "生日" %>
-                    <%= f.text_field :birthdate, :class => "form-control bdate-input", :placeholder => "yyyy/mm/dd" %>
-                </div>
-                <div class="form-group">
-                    <div class="inline-div-1">
-                        <%= f.label :nation, "國籍" %>
-                        <div class="form-control nation-radio horiz-radio">
-                            <%= f.label :home, "本國" %>
-                            <%= f.radio_button :nation, "home", :checked => true %>
-                        </div>
-                        <div class="form-control nation-radio horiz-radio">
-                            <%= f.label :foreign, "外國" %>
-                            <%= f.radio_button :nation, "foreign" %>
-                        </div>
-                    </div>
-                    <div class="inline-div-1">
-                        <%= f.label :idno, "身分證字號" %>
-                        <%= f.text_field :idno, :class => "form-control" %>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <%= f.label :tel, "聯絡電話" %>
-                    <%= f.text_field :tel, :class => "form-control" %>
-                </div>
-                <div class="form-group">
-                    <%= f.label :address, "通訊地址" %>
-                    <%= f.text_field :pcode, :class => "form-control postal-code", :placeholder => "郵遞區號" %>
-                    <span>-</span>
-                    <%= f.text_field :address, :class => "form-control address" %>
-                </div>
-                <div class="form-group">
-                    <%= f.label :email, "電子郵件" %>
-                    <%= f.text_field :email, :class => "form-control" %>
-                </div>
-                <div class="form-group">
-                    <%= f.label :addic, "健保卡加註意願" %>
-                    <div class="form-control ic-radio horiz-radio">
-                        <%= f.label :yesic, "同意" %>
-                        <%= f.radio_button :addic, "yesic"%>
-                    </div>
-                    <div class="form-control ic-radio horiz-radio">
-                        <%= f.label :noic, "不同意" %>
-                        <%= f.radio_button :addic, "noic" %>
-                        <br>
-                        <span>
-                            為保護您的基本權益，請先仔細閱讀
-                            <a href="#section9" id="addic-info">健保卡加註說明</a>。
-                        </span>
-                    </div>
-                </div>
-                <p>
-                    <%= f.submit :value => "送出", :class => "btn button" %>
-                </p>
-            <% end %>
-            </div>
-        </div>
-    </div>
-    <!-- /container -->
-
     <!-- Footer -->
     <div id="footer">
         <div class="container">
