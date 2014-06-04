@@ -1,6 +1,6 @@
 class StoryController < ApplicationController
     def index
-        puts ('test')
+        # puts ('test')
     end
 
     def new
