@@ -20,16 +20,16 @@
  .icon {
     margin: 50px;
 }
-#tinman{
-width: 60%;
-position: relative;
-left: -60%;
+#tinman {
+    width: 60%;
+    position: relative;
+    left: 100%;
 }
 .tinmancontainer {
     position: fixed;
     width: 10%;
     height: 60%;
-    right: 0px;
+    left: 0px;
     top: 15%;
     background-color: #15FFE3;
     z-index: 300;
@@ -44,7 +44,7 @@ left: -60%;
     position: relative;
     margin: 0px;
     width: 100%;
-    /*height: 520px;*/
+    height: 600px;
     text-align: center;
     font-family:'Andale Mono', arial, sans-serif;
     background-color:#63CFD4;
@@ -85,7 +85,7 @@ left: -60%;
     perspective: 700px;
 }
 .folding li {
-    height: 100px;
+    height: 150px;
     color: #fff;
     padding-left: 30px;
     border-left: 30px solid rgba(0, 0, 0, .1);
@@ -102,7 +102,7 @@ left: -60%;
 }
 button.connect {
     position: relative;
-    top:-30px;
+    /*top:-30px;*/
     font-size: 18px;
     border: none;
     color: #000;
@@ -144,10 +144,14 @@ button.connect {
     transform: rotateX(0deg);
 }
 .folding .qttop {
+    position: relative;
     background-color: #3358D3;
+    z-index: 0;
 }
 .folding .qtbot {
+    position: relative;
     background-color: #2C4AD3;
+    z-index: -1;
 }
 .rss-link {
     color: #fff;
@@ -161,7 +165,7 @@ button.connect {
     padding: 15px 0;
 }
 .csstransforms3d .folded li:nth-child(even) {
-    margin-top: -200px;
+    margin-top: -300px;
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
@@ -194,6 +198,40 @@ button.connect {
     background-color: #555;
 }*/
 
+/*Answer block*/
+ .answertext {
+    position: relative;
+    top: 26px;
+    font-family:"CSong3HK-Medium";
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.answer {
+    width: 30%;
+}
+.as1 {
+    position: relative;
+    top: 50px;
+    left: 140px;
+    z-index: 100;
+}
+.as2 {
+    position: relative;
+    top: 50px;
+    left: 230px;
+    z-index: 100;
+}
+.as3 {
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+.as4 {
+    position: relative;
+    top: 30px;
+    left: 230px;
+}
 /* Font awesome styles */
 [class*="fontawesome-"]::before {
     font-family:'FontAwesome', sans-serif;
@@ -246,7 +284,7 @@ button.connect {
     transition: all 0.3s ease-out;
     cursor: pointer;
 }*/
- button:hover {
+ button.connect:hover {
     outline: 6px solid #fcb509;
     color: #000;
     background: -moz-linear-gradient(-76deg, #ffffff 0%, #ffffff 51%, #FFF0CB 51%, #FFF0CB 100%);
@@ -268,6 +306,7 @@ body {
     color: #5b5b5b;
     font-family:'Source Sans Pro', sans-serif;
     font-weight: 300;
+    height: 10000px;
 }
 body, input, textarea, select {
     font-size: 15pt;
