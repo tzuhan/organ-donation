@@ -40,13 +40,14 @@
 
     <!-- introduction -->
     <div id="intro">
-    	<div class="intro image">
-    		<img id="tinman" src="../../assets/tm_1.svg">
+    	<div>
+    		<%= image_tag('tm_1.svg', :id => "introimg1", :class => "illustration")%>
+    		<%= image_tag('tm_2.svg', :id => "introimg2", :class => "illustration")%>
     	</div>
         <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很久很久以前......在遙遠的奧茲國度，曾有一個小女孩桃樂絲，和一隻獅子、機器人、稻草人開始了一連串冒險，追尋勇氣、善心與智慧。<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好幾百年過去了，小女孩、獅子、稻草人早已離開，只剩機器人還運作著，只是那顆用了幾百年的心，也慢慢開始不堪負荷。機器人於是踏上旅程，向東方一個神祕的小島去找尋新的零件......
         </h1>
     </div>
-    <div id="scroll-icons" style="">
+    <div id="scroll-icons">
     	<a href="#intro"><div class="scroll-circle" id="c2">
         </div></a>
         <a href="#section1"><div class="scroll-circle" id="c3">
@@ -72,6 +73,7 @@
     <!-- Main -->
     <div class="chapter"></div>
     <section class="section" id="section1">
+    	<%= image_tag('tm_3.svg', :id => "introimg3", :class =>"illustration")%>
         <%= image_tag('Organs_eye.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>什麼是「器官捐贈/移植」？</strong></h1><br><br>

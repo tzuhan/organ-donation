@@ -1,13 +1,21 @@
 (function() {
     $(document).ready(function() {
-        // tzuhan
+    	
+		/*----------------------------------------------------*/
+		// scroll icons by Han
+		/*----------------------------------------------------*/  	
         $("a").click(function(){
-            $(this).addClass('.clicked');
-            console.log("add clicked");
+        	//stop jump to #section by default
+        	//event.preventDefault();
+        	
+        	$("div.clicked").removeClass('clicked');
+            $(this).find("div").toggleClass('clicked');
+			var offset = $($(this).attr("href")).offset().top;
+			//$(this)
+            $('html, body').animate({scrollTop: offset}, 1000);
+			
         });
-        $("div.clicked").click(function(){
-            $(this).removeClass('.clicked');
-        });
+        
 
         // Yo
         var foldingList = $('.folding'),
@@ -64,64 +72,32 @@
         // Eric
 
         var robotDiv = $('#robot-div');
-        $('#take-action-btn').on('click', triggerTakeAction);
+		$('#take-action-btn').on('click', triggerTakeAction);
 
         function triggerTakeAction(evt) {
             robotDiv.animate({
                 'height': '300px',
             });
         }
+        
+        //////////////////////////////////////
+        //Yo /////////////////////////////////
+        //////////////////////////////////////
+        $('.tinmanbox').css('left',-$('.tinmanbox').outerWidth());
+		$('#tinman').click(function() {
+			$('.tinmanbox').animate({
+				left: parseInt($('.tinmanbox').css('left'),10) == 0 ? -$('.tinmanbox').outerWidth() : 0
+		    });
+		    //hide or show tinmanbox this.toggle();
+		});
+        //DOM element is not ready outside this function
+		var img1Height = $("#introimg1").offset().top;
+		var img2Height = $("#introimg2").offset().top;
+		var img3Height = $("#introimg3").offset().top;
+
+		$('#introimg1').stick_in_parent();
+		$('#introimg2').stick_in_parent();
+		
     });
 })();
 
-$(document).ready(function() {
-  $('.tinmanbox').css('left',-$('.tinmanbox').outerWidth());
-  $('#tinman').click(function() {
-    $('.tinmanbox').animate({
-      left: parseInt($('.tinmanbox').css('left'),10) == 0 ?
-        -$('.tinmanbox').outerWidth() :
-        0
-
-    });
-    //hide or show tinmanbox this.toggle();
-  });
-});
-
-
-
-
-/*----------------------------------------------------*/
-// MENU SMOOTH SCROLLING by Han
-/*----------------------------------------------------*/  
-    $("scroll-circle, a.button.circled.scrolly").bind('click',function(event){
-		
-		//var headerH = $('nav').height();
-	   	// <footer>
-    	//  	<a href="#intro" class="button circled scrolly">開始</a>
-        // </footer>
-
-        $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top + "px"
-        }, {
-            duration: 1200,
-            easing: "easeInOutExpo"
-        });
-
-        return false;
-		event.preventDefault();
-    });
-	
-/*----------------------------------------------------*/
-// scroll icons by Han
-/*----------------------------------------------------*/  
-        $("#scroll-icons div").click(function(){
-            $("div.clicked").toggleClass('clicked');
-            $(this).toggleClass('clicked');
-            //smoooth scrolling
-            $("html, body").animate({
-            	scrollTop: $($(this).attr("href")).offset().top + "px"
-    		}, {
-		        duration: 1200,
-		        easing: "easeInOutExpo"
-        	});
-        });
