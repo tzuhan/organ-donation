@@ -11,12 +11,11 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery.min
-//= require jquery.dropotron.min
-//= require skel.min
-//= require skel-panels.min
 //= require jquery_ujs
-//= require html5shiv
-//= require init
+//= require html5up/skel.min
 //= require_tree .
-
+//= require bootstrap
+//= require bootstrap-datepicker
+//= require jquery.avgrund
+//= require spin
+//= require ladda
