@@ -75,10 +75,10 @@
 })();
 
 $(document).ready(function() {
-  $('.tinmanbox').css('right',-$('.tinmanbox').outerWidth());
+  $('.tinmanbox').css('left',-$('.tinmanbox').outerWidth());
   $('#tinman').click(function() {
     $('.tinmanbox').animate({
-      right: parseInt($('.tinmanbox').css('right'),10) == 0 ?
+      left: parseInt($('.tinmanbox').css('left'),10) == 0 ?
         -$('.tinmanbox').outerWidth() :
         0
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
 /*----------------------------------------------------*/
 // MENU SMOOTH SCROLLING by Han
 /*----------------------------------------------------*/  
-    $(".button.circled.scrolly a").bind('click',function(event){
+    $("scroll-circle, a.button.circled.scrolly").bind('click',function(event){
 		
 		//var headerH = $('nav').height();
 	   	// <footer>
