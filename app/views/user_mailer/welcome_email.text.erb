@@ -1,8 +1,12 @@
-器官捐贈卡簽署 新註冊使用者
-=======================
+器官捐贈同意卡簽署 新註冊使用者
+===========================
+卡號：<%= @userdata[:cardno] %>
 姓名：<%= @userdata[:username] %>
+性別：<%= @userdata[:sex] %>
 生日：<%= @userdata[:birthdate] %>
-身分證字號：<%= @userdata[:idno] %>
+國籍：<%= @userdata[:nation] %>
+身分證字號/居留證號碼：<%= @userdata[:idno] %>
 聯絡電話：<%= @userdata[:tel] %>
-地址：<%= @userdata[:address] %>
-生日：<%= @userdata[:birthdate] %>
+地址：<%= @userdata[:pcode] + '-' + @userdata[:address] %>
+信箱：<%= @userdata[:email] %>
+健保卡加註意願：<%= @userdata[:addic] %>

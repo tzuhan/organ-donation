@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="reg-div">
-        <%= form_for :article, url: {action: "send_reg"}, html: {class: "reg-form"} do |f| %>
+        <%= form_for :article, url: {action: "send_data"}, html: {class: "reg-form"} do |f| %>
             <div class="form-group">
                 <%= f.label :cardno, "器捐同意卡卡號" %>
                 <%= f.text_field :cardno, :class => "form-control", :placeholder => "新申請者免填" %>
@@ -109,7 +109,7 @@
                     <%= f.radio_button :addic, "yesic"%>
                 </div>
                 <div class="form-control ic-radio horiz-radio">
-                    <%= f.label :noic, "不同意" %>
+                    <%= f.label :noic, "暫不同意" %>
                     <%= f.radio_button :addic, "noic" %>
                     <br>
                     <span>

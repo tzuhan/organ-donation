@@ -1,7 +1,7 @@
 // temp disabled
 (function() {
     $(document).ready(function() {
-        console.log('haah');
+        console.log('hah');
         var allSteps = $('.action-steps');
         var stepFirst = allSteps.first();
         stepFirst.find('img').on('click', function(evt) {

@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
-    <h2>器官捐贈卡簽署 新註冊使用者</h2>
-    <p>
-      姓名：<%= @userdata[:username] %>
-    </p>
-    <p>
-      生日：<%= @userdata[:birthdate] %>
-    </p>
-    <p>
-      身分證字號：<%= @userdata[:idno] %>
-    </p>
-    <p>
-      聯絡電話：<%= @userdata[:tel] %>
-    </p>
-    <p>
-      地址：<%= @userdata[:address] %>
-    </p>
-    <p>
-      生日：<%= @userdata[:birthdate] %>
+    <head>
+        <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+    </head>
+    <body>
+        <h2>器官捐贈同意卡簽署 新註冊使用者</h2>
+        <p>
+            卡號：<%= @userdata[:cardno] %> <br>
+            姓名：<%= @userdata[:username] %> <br>
+            性別：<%= @userdata[:sex] %> <br>
+            生日：<%= @userdata[:birthdate] %> <br>
+            國籍：<%= @userdata[:nation] %> <br>
+            身分證字號/居留證號碼：<%= @userdata[:idno] %> <br>
+            聯絡電話：<%= @userdata[:tel] %> <br>
+            地址：<%= @userdata[:pcode] + '-' + @userdata[:address] %> <br>
+            信箱：<%= @userdata[:email] %> <br>
+            健保卡加註意願：<%= @userdata[:addic] %> <br>
+        </p>
   </body>
 </html>
