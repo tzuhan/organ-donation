@@ -13,6 +13,7 @@
 */
 
 /*********************************************************************************/
+
 /* Basic                                                                         */
 /*********************************************************************************/
 
@@ -296,80 +297,81 @@ hr
 
 /* Sections/Articles */
 
-	section,
-	article
-	{
-		margin-bottom: 3em;
-	}
-	
-	section > :last-child,
-	article > :last-child
-	{
-		margin-bottom: 0;
-	}
+section,
+article
+{
+	margin-bottom: 3em;
+}
 
-	section:last-child,
-	article:last-child
-	{
-		margin-bottom: 0;
-	}
+section > :last-child,
+article > :last-child
+{
+	margin-bottom: 0;
+}
 
-	.row > section,
-	.row > article
-	{
-		margin-bottom: 0;
-	}
+section:last-child,
+article:last-child
+{
+	margin-bottom: 0;
+}
 
-	section.special > header,
-	section.special > footer,
-	article.special > header,
-	article.special > footer
-	{
-		text-align: center;
-	}
+.row > section,
+.row > article
+{
+	margin-bottom: 0;
+}
+
+section.special > header,
+section.special > footer,
+article.special > header,
+article.special > footer
+{
+	text-align: center;
+}
 
 /* Images */
 
-	.image
+.image
+{
+	position: relative;
+	display: inline-block;
+	border: 0;
+	outline: 0;
+}
+
+	/* Uncomment the block below if you want linked images to highlight on hover */
+
+	/*
+	a.image:before
 	{
-		position: relative;
-		display: inline-block;
-		border: 0;
-		outline: 0;
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		opacity: 0;
+		-moz-transition: opacity 0.35s ease-in-out;
+		-webkit-transition: opacity 0.35s ease-in-out;
+		-o-transition: opacity 0.35s ease-in-out;
+		-ms-transition: opacity 0.35s ease-in-out;
+		transition: opacity 0.35s ease-in-out;
 	}
 	
-		/* Uncomment the block below if you want linked images to highlight on hover */
-	
-		/*
-		a.image:before
+		a.image:hover:before
 		{
-			content: '';
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: #fff;
-			opacity: 0;
-			-moz-transition: opacity 0.35s ease-in-out;
-			-webkit-transition: opacity 0.35s ease-in-out;
-			-o-transition: opacity 0.35s ease-in-out;
-			-ms-transition: opacity 0.35s ease-in-out;
-			transition: opacity 0.35s ease-in-out;
+			opacity: 0.15;
 		}
-		
-			a.image:hover:before
-			{
-				opacity: 0.15;
-			}
-		*/
-	
-		.image img
-		{
-			display: block;
-			width: 100%;
-		}
+	*/
+
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+
 
 /* Basic                                                                         */
 
@@ -418,13 +420,14 @@ hr
     position: relative;
     margin: 0px;
     width: 100%;
-    /*height: 520px;*/
+    height: 600px;
     text-align: center;
     font-family:'Andale Mono', arial, sans-serif;
     background-color: #45B19C;
     color: #0C6F73;
     line-height: 24px;
     border: 1px solid #ddd;
+    z-index: 300;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -459,7 +462,7 @@ hr
     perspective: 700px;
 }
 .folding li {
-    height: 100px;
+    height: 150px;
     color: #fff;
     padding-left: 30px;
     border-left: 30px solid rgba(0, 0, 0, .1);
@@ -476,7 +479,7 @@ hr
 }
 button.connect {
     position: relative;
-    top:-30px;
+    /*top:-30px;*/
     font-size: 18px;
     border: none;
     color: #000;
@@ -535,7 +538,7 @@ button.connect {
     padding: 15px 0;
 }
 .csstransforms3d .folded li:nth-child(even) {
-    margin-top: -200px;
+    margin-top: -300px;
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
@@ -568,6 +571,40 @@ button.connect {
     background-color: #555;
 }*/
 
+/*Answer block*/
+ .answertext {
+    position: relative;
+    top: 26px;
+    font-family:"CSong3HK-Medium";
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.answer {
+    width: 30%;
+}
+.as1 {
+    position: relative;
+    top: 50px;
+    left: 140px;
+    z-index: 100;
+}
+.as2 {
+    position: relative;
+    top: 50px;
+    left: 230px;
+    z-index: 100;
+}
+.as3 {
+    position: relative;
+    top: 30px;
+    left: 140px;
+}
+.as4 {
+    position: relative;
+    top: 30px;
+    left: 230px;
+}
 /* Font awesome styles */
 [class*="fontawesome-"]::before {
     font-family:'FontAwesome', sans-serif;

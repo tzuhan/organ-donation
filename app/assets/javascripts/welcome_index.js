@@ -19,9 +19,9 @@
 
         // Yo
         var foldingList = $('.folding'),
-        foldingListHeight = $('.folding').height(),
-        topElemOffset = foldingList.offset().top;
-            // Function responsible for unfolding the list
+            foldingListHeight = $('.folding').height(),
+            topElemOffset = foldingList.offset().top;
+        // Function responsible for unfolding the list
         unfold = function() {
             setTimeout(function() {
                 if (!foldingList.hasClass('folded')) {
@@ -32,39 +32,41 @@
         };
 
         // Fold/Unfold the list
-        $('.connect').on("click", function() {
-            if ($(this).hasClass('bt1')) {
-                $('.qt1').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt2')) {
-                $('.qt2').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt3')) {
-                $('.qt3').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt4')) {
-                $('.qt4').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt5')) {
-                $('.qt5').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt6')) {
-                $('.qt6').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt7')) {
-                $('.qt7').toggleClass('folded');
-            };
-            if ($(this).hasClass('bt8')) {
-                $('.qt8').toggleClass('folded');
-            };
+        $('.bt1').on("click", function() {
+            $('.qt1').toggleClass('folded');
         });
+        $('.bt2').on("click", function() {
+            $('.qt2').toggleClass('folded');
+        });
+        $('.bt3').on("click", function() {
+            $('.qt3').toggleClass('folded');
+        });
+        $('.bt4').on("click", function() {
+            $('.qt4').toggleClass('folded');
+        });
+        $('.bt5').on("click", function() {
+            $('.qt5').toggleClass('folded');
+        });
+        $('.bt6').on("click", function() {
+            $('.qt6').toggleClass('folded');
+        });
+        $('.bt7').on("click", function() {
+            $('.qt7').toggleClass('folded');
+        });
+        $('.bt8').on("click", function() {
+            $('.qt8').toggleClass('folded');
+        });
+        $('.bt9').on("click", function() {
+            $('.qt9').toggleClass('folded');
+        });
+
         // If needed, unfold the list right away
         if (topElemOffset <= $(window).height() - foldingListHeight)
             unfold();
         // Check whether to unfold the list when scrolling/resizing
         $(window).on("scroll resize", function() {
             var th = $(this);
-            if (th.scrollTop() + th.height() - foldingListHeight >= 3*topElemOffset)
+            if (th.scrollTop() + th.height() - foldingListHeight >= 3 * topElemOffset)
                 unfold();
         });
 
@@ -100,4 +102,3 @@
 		
     });
 })();
-
