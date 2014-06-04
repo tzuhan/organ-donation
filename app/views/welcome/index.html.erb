@@ -21,19 +21,35 @@
     <!-- Tinman side tab -->
     <div class="tinmancontainer">
         <img id="tinman" src="../../assets/tm_1.svg">
-        <div class="tinmanbox"></div>
+        <div class="tinmanbox">
+        	<a href="#section1"><%= image_tag('Organs_eye.png', :class => "icon")%></a>
+        	<a href="#section2"><%= image_tag('Organs_bone.png', :class => "icon")%></a>
+        	<a href="#section3"><%= image_tag('Organs_intestine.png', :class => "icon")%></a>
+        	<a href="#section4"><%= image_tag('Organs_kidney.png', :class => "icon")%></a>
+        	<a href="#section5"><%= image_tag('Organs_liver.png', :class => "icon")%></a>
+        	<a href="#section6"><%= image_tag('Organs_lung.png', :class => "icon")%></a>
+        	<a href="#section7"><%= image_tag('Organs_pancreas.png', :class => "icon")%></a>
+        	<a href="#section8"><%= image_tag('Organs_skin.png', :class => "icon")%></a>
+        	<a href="#section9"><%= image_tag('Organs_heart.png', :class => "icon")%></a>
+        </div>
     </div>
 
     <!-- Overlay Img -->
     <div class="overlay">
     </div>
 
-    <!-- Side Banner -->
-    <div id="banner">
+    <!-- introduction -->
+    <div id="intro">
+    	<div>
+    		<%= image_tag('tm_1.svg', :id => "introimg1", :class => "illustration")%>
+    		<%= image_tag('tm_2.svg', :id => "introimg2", :class => "illustration")%>
+    	</div>
         <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp很久很久以前......在遙遠的奧茲國度，曾有一個小女孩桃樂絲，和一隻獅子、機器人、稻草人開始了一連串冒險，追尋勇氣、善心與智慧。<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好幾百年過去了，小女孩、獅子、稻草人早已離開，只剩機器人還運作著，只是那顆用了幾百年的心，也慢慢開始不堪負荷。機器人於是踏上旅程，向東方一個神祕的小島去找尋新的零件......
         </h1>
     </div>
-    <div id="scroll-icons" style="">
+    <div id="scroll-icons">
+    	<a href="#intro"><div class="scroll-circle" id="c2">
+        </div></a>
         <a href="#section1"><div class="scroll-circle" id="c3">
         </div></a>
         <a href="#section2"><div class="scroll-circle" id="c4">
@@ -52,18 +68,13 @@
         </div></a>
         <a href="#section9"><div class="scroll-circle" id="c11">
         </div></a>
-        <script>
-            $("#scroll-icons div").click(function(){
-                $("div.clicked").toggleClass('clicked');
-                $(this).toggleClass('clicked');
-            });
-        </script>
     </div>
 
     <!-- Main -->
     <div class="chapter"><p class="chptitle">Chapter 1</p></div>
     <section class="section" id="section1">
-        <%= image_tag('Organs_kidney.png', :class => "icon")%>
+    	<%= image_tag('tm_3.svg', :id => "introimg3", :class =>"illustration")%>
+        <%= image_tag('Organs_eye.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>什麼是「器官捐贈/移植」？</strong></h1><br><br>
             <h2>
@@ -76,18 +87,18 @@
 
     <ul class="qt1 folding folded">
         <li class="qttop"><h1 class="answertext">問：以下關於器官捐贈的描述，何者正確？</h1>
-            <button type="button" class="answer wrong as1 btn-lg btn-default">就算一個人不曾表達捐贈意願，醫生還是可以摘取器官</button>
-            <button type="button" class="answer wrong as2 btn-lg btn-default">器官的捐贈與移植以古代的醫學水準即可達成</button>
+            	<button type="button" class="answer wrong as1 btn-lg btn-default">就算一個人不曾表達捐贈意願，醫生還是可以摘取器官</button>
+            	<button type="button" class="answer wrong as2 btn-lg btn-default">器官的捐贈與移植以古代的醫學水準即可達成</button>
         </li>
         <li class="qtbot">
-            <button type="button" class="answer correct as3 btn-lg btn-default">捐贈器官有其黃金時期，必須儘快找到合適對象</button>
-            <button type="button" class="answer wrong as4 btn-lg btn-default">捐贈的器官不需被評估，只要被捐贈出來都能用</button>
+            	<button type="button" class="answer correct as3 btn-lg btn-default">捐贈器官有其黃金時期，必須儘快找到合適對象</button>
+            	<button type="button" class="answer wrong as4 btn-lg btn-default">捐贈的器官不需被評估，只要被捐贈出來都能用</button>
         </li>
     </ul>
 
     <div class="chapter"><p class="chptitle">Chapter 2</p></div>
     <section class="section" id="section2">
-        <%= image_tag('Organs_eye.png', :class => "icon")%>
+        <%= image_tag('Organs_bone.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>哪些器官可以捐贈呢？心臟可以嗎？！</strong></h1><br><br>
             <h2>
@@ -110,7 +121,7 @@
 
     <div class="chapter"><p class="chptitle">Chapter 3</p></div>
     <section class="section" id="section3">
-        <%= image_tag('Organs_bone.png', :class => "icon")%>
+        <%= image_tag('Organs_intestine.png', :class => "icon")%>
         <hgroup >
             <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1><br><br>
             <h2>
@@ -134,7 +145,7 @@
 
     <div class="chapter"><p class="chptitle">Chapter 4</p></div>
     <section class="section" id="section4">
-        <%= image_tag('Organs_intestine.png', :class => "icon")%>
+        <%= image_tag('Organs_kidney.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1><br><br>
             <h2>
@@ -158,7 +169,7 @@
 
     <div class="chapter"><p class="chptitle">Chapter 5</p></div>
     <section class="section" id="section5">
-        <%= image_tag('Organs_kidney.png', :class => "icon")%>
+        <%= image_tag('Organs_liver.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1><br><br>
             <h2>
@@ -185,13 +196,14 @@
 
     <div class="chapter"><p class="chptitle">Chapter 6</p></div>
     <section class="section" id="section6">
-        <%= image_tag('Organs_liver.png', :class => "icon")%>
+        <%= image_tag('Organs_lung.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>如果成為「器官捐贈者」我要付出什麼代價嗎？</strong></h1><br><br>
             <h2>
                 代價：沒有！<br><br>
                 多數人得以健康活到終老，僅有少數人意外腦死，在器官良好的狀態下，醫院才會徵詢家屬捐贈的可能性。醫院也不會放棄搶救任何一個「器官捐贈者」！醫院提供一樣的醫療服務，以搶救生命為優先。器官捐贈是無條件且無償的捐贈，所有醫療及相關費用將由全民健保給付，捐贈者家屬不需額外負擔任何費用。<br><br>
                 所以成為一個「器官捐贈者」，無損亦無償，但所捐贈的器官，卻能成為另一人生命中的無價之寶。
+            <br></br>
             </h2>
         </hgroup>
         <button class="bt6 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
@@ -209,7 +221,7 @@
 
     <div class="chapter"><p class="chptitle">Chapter 7</p></div>
     <section class="section" id="section7">
-        <%= image_tag('Organs_lung.png', :class => "icon")%>
+        <%= image_tag('Organs_pancreas.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>有器官了！身為「符合條件的移植者」我該做什麼？</strong></h1><br><br>
             <h2>
@@ -232,7 +244,7 @@
 
     <div class="chapter"><p class="chptitle">Chapter 8</p></div>
     <section class="section" id="section8">
-        <%= image_tag('Organs_pancreas.png', :class => "icon")%>
+        <%= image_tag('Organs_skin.png', :class => "icon")%>
         <hgroup>
             <h1>&nbsp&nbsp&nbsp<strong>完成器官捐贈/移植了！在結束手術之後......</strong></h1><br><br>
             <h2>

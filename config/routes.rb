@@ -1,4 +1,7 @@
 CcspFinal::Application.routes.draw do
+  get "login/index"
+  get "signup/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,13 +58,24 @@ CcspFinal::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+    #resources :story
 
     root :to  => "welcome#index"
     get "welcome" => "welcome#index"
     post "welcome" => "welcome#send_reg"
+
     get "story" => "story#index"
+
     get "register" => "register#index"
     # use say function in welcome controller
     # get "register" => "welcome#reg"
     post "register" => "register#send_reg"
+
+    get '/signup'=>'signup#index'
+    get '/signup/index'=>'signup#index'
+    get '/auth/:provider/callback'=>'signup#create'
+
+    get '/login'=>'login#index'
+    get '/login/index'=>'login#index'
+    get '/login/logout'=>'login#logout'
 end

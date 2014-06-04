@@ -1,13 +1,23 @@
 (function() {
     $(document).ready(function() {
-        // tzuhan
+
+        /*----------------------------------------------------*/
+        // scroll icons by Han
+        /*----------------------------------------------------*/
         $("a").click(function() {
-            $(this).addClass('.clicked');
-            console.log("add clicked");
+            //stop jump to #section by default
+            //event.preventDefault();
+
+            $("div.clicked").removeClass('clicked');
+            $(this).find("div").toggleClass('clicked');
+            var offset = $($(this).attr("href")).offset().top;
+            //$(this)
+            $('html, body').animate({
+                scrollTop: offset
+            }, 1000);
+
         });
-        $("div.clicked").click(function() {
-            $(this).removeClass('.clicked');
-        });
+
 
         // Yo
         var foldingList = $('.folding'),
@@ -21,7 +31,7 @@
                     return;
                 }
             }, 500);
-        }
+        };
 
         // Fold/Unfold the list
         $('.bt1').on("click", function() {
@@ -60,7 +70,7 @@
             var th = $(this);
             if (th.scrollTop() + th.height() - foldingListHeight >= 3 * topElemOffset)
                 unfold();
-        })
+        });
 
 
         // Eric
@@ -74,9 +84,9 @@
             });
         };
 
-
-
-        //Yo
+        //////////////////////////////////////
+        //Yo /////////////////////////////////
+        //////////////////////////////////////
         $('.answer').on('click', function() {
             $(this).toggleClass('active btn-warning btn-default');
         });
@@ -109,15 +119,27 @@
                     $('.qt1').find('.wrong').removeClass('btn-warning').addClass('btn-default');
                 }, toduration);
 
-            }
+            };
+        });
 
-        })
-
-        $('.tinmancontainer').css('left', -$('.tinmancontainer').outerWidth());
+        $('.tinmanbox').css('left', -$('.tinmanbox').outerWidth());
         $('#tinman').click(function() {
-            $('.tinmancontainer').animate({
-                left: parseInt($('.tinmancontainer').css('left'), 10) == 0 ? -$('.tinmancontainer').outerWidth() : 0
+            console.log('333');
+            $('.tinmanbox').animate({
+                left: parseInt($('.tinmanbox').css('left'), 10) == 0 ? -$('.tinmanbox').outerWidth() : 0
             });
         });
+
+
+
+
+        //hide or show tinmanbox this.toggle();
+        //DOM element is not ready outside this function
+        var img1Height = $("#introimg1").offset().top;
+        var img2Height = $("#introimg2").offset().top;
+        var img3Height = $("#introimg3").offset().top;
+
+
+
     });
 })();
