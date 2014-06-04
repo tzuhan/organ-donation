@@ -34,10 +34,38 @@ $header-height: 150px;
 .story-wrapper {
     position: relative;
     z-index: 1000;
+    div {
+        width: 80%;
+    }
+}
+.intro {
+    margin: 50px auto;
+    h1 {
+        text-align: center;
+        font-family: "MStiffHeiHK-UltraBold", "微軟正黑體", "Microsoft JhengHei", AppleGothic;
+        font-size: 3em;
+        font-weight: bold;
+
+    }
+}
+.share-story {
+    margin: 20px auto 10px auto;
+    width: 80%;
+
+    button {
+        margin: 10px auto;
+        -webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+        transition: all 0.5s;
+        &:hover {
+            background: #ffcc00;
+            opacity: 0.8;
+            outline: none;
+        }
+    }
 }
 
 .story-column {
-    margin: 50px auto;
+    margin: 20px auto;
     width: 80%;
 
     .story {
@@ -99,6 +127,7 @@ $header-height: 150px;
                         padding: 10px 20px;
                         display: inline-block;
                         vertical-align: middle;
+                        text-shadow: 0 0 8px #336666;
                     }
                     .author-name {
                         font-family: "微軟正黑體", "Microsoft JhengHei", AppleGothic;
