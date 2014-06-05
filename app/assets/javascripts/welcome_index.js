@@ -175,18 +175,18 @@ function getIntlDonationRate() {
     return [
         {
             nation: '台灣',
-            waiting: 8000,
-            donation: 800,
+            waiting: 8041,
+            donation: 637,
         },
         {
             nation: '美國',
-            waiting: 117000,
-            donation: 30000,
+            waiting: 237092,
+            donation: 33398,
         },
         {
             nation: '日本',
-            waiting: 55000,
-            donation: 2000,
+            waiting: 55762,
+            donation: 5422,
         }
     ];
 }
