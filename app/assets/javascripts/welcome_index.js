@@ -83,6 +83,9 @@
 
         var toduration = 1500;
         $('.answer').on('click', function() {
+            $('#tinman').fadeIn();
+            $('.tinmancontainer').fadeIn();
+
             var $this = $(this);
             var className = $this.parents('ul.folding').attr('class');
             var curIdx = getQuestionIndex(className);
@@ -91,15 +94,8 @@
                 var notify = humane.create({
                     timeout: toduration,
                     baseCls: 'humane-bigbox'
-                })
-                notify.log('（V）<br>太棒了！請繼續往下一題前進～');
-                $('.humane-bigbox').css({
-                    "background": "rgba(84, 173, 71, 0.93)"
                 });
-                setTimeout(function() {
-                    $('.qt' + curIdx).addClass('folded');
-                    $('.qt' + curIdx).find('.correct').removeClass('btn-warning').addClass('btn-default');
-                }, toduration + 500);
+                var logMessage = '（V）<br>太棒了！請繼續往下一題前進～';
 
                 var $tinmanbox = $('.tinmanbox');
                 var $curIcon = $tinmanbox.find('a[href=#section' + curIdx + '] .icon');
@@ -107,6 +103,29 @@
                     $('#tinman').click();
                 }
                 $curIcon.addClass('answered');
+
+                var allAnswered = true;
+                $tinmanbox.find('.icon').each(function() {
+                    if (!allAnswered) return;
+                    allAnswered = $(this).hasClass('.answered');
+                });
+                if (allAnswered) {
+                    logMessage = '（V）<br>恭喜答對所有題目！<br>即將前往「立即行動」～';
+                    setTimeout(function() {
+                        document.location.href = '../register';
+                    }, 2000);
+                } else {
+                    setTimeout(function() {
+                        $('.qt' + curIdx).addClass('folded');
+                        $('.qt' + curIdx).find('.correct').removeClass('btn-warning').addClass('btn-default');
+                    }, toduration + 500);
+                }
+
+                notify.log(logMessage);
+                $('.humane-bigbox').css({
+                    "background": "rgba(84, 173, 71, 0.93)"
+                });
+
 
             } else {
                 var notify = humane.create({
@@ -196,17 +215,17 @@ function getIntlDonationRate() {
         {
             nation: '台灣',
             waiting: 8041,
-            donation: 637,
+            donation: 837,
         },
         {
             nation: '美國',
-            waiting: 237092,
-            donation: 33398,
+            waiting: 117000,
+            donation: 31398,
         },
         {
             nation: '日本',
-            waiting: 55762,
-            donation: 5422,
+            waiting: 45762,
+            donation: 10422,
         }
     ];
 }
