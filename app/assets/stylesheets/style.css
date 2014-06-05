@@ -68,7 +68,6 @@
     margin: 0px;
     width: 100%;
     text-align: center;
-    font-family:'Andale Mono', arial, sans-serif;
     background-color: #45B19C;
     color: #0C6F73;
     /*line-height: 24px;*/
@@ -455,6 +454,7 @@ p, ul, ol, dl, table {
 }
 p {
     text-align: justify;
+    font-family: "Microsoft Jhenghei";
 }
 br.clear {
     clear: both;
