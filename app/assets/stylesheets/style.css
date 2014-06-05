@@ -63,7 +63,7 @@
 
 .section {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     margin: 0px;
     width: 100%;
     text-align: center;
@@ -292,6 +292,7 @@ a {
  .answertext {
  	display: block;
     position: relative;
+    text-shadow:1px 1px #000;
     top: 26px;
     font-family:"CSong3HK-Medium";
     font-size: 30px;
@@ -2308,10 +2309,10 @@ header .fa.circled {
 }
 .scroll-circle {
     /*unclick, go transparent*/
-    width: 7px;
-    height: 7px;
-    border-radius: 7px;
-    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid;
     border-color: #666366;
     background-color: transparent;
     margin-bottom: 200%;
@@ -2320,10 +2321,10 @@ header .fa.circled {
 }
 .clicked {
     /*clickedblacken*/
-    width: 7px;
-    height: 7px;
-    border-radius: 7px;
-    border: 1px solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid;
     border-color: #666366;
     background-color: rgb(102, 99, 102);
     margin-bottom: 200%;

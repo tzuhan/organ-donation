@@ -73,15 +73,19 @@
     <!-- Main -->
     <div class="chapter"><p class="chptitle">Chapter 1</p></div>
     <section class="section" id="section1">
-    	<%= image_tag('tm_3.svg', :id => "introimg3", :class =>"illustration")%>
         <%= image_tag('Organs_eye.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>什麼是「器官捐贈/移植」？</strong></h1><br><br>
-            <h2>
-                器官捐贈與移植是現代醫學最大的進步！<br><br>
-                當一個人在生前表達個人意願，或家屬的同意，願意在其死後，將可用的器官捐贈給需要的人，醫生便能評估器官的狀況，在黃金時間內找到合適的移植者，進行移植手術，讓一個人的逝去，延續另一個人的生命。
-            </h2>
+            <h1>&nbsp&nbsp&nbsp<strong>什麼是「器官捐贈/移植」？</strong></h1><br>
         </hgroup>
+        <div class="content-wrapper inline">
+        <%= image_tag('tm_2.svg', :id => "introimg2", :class =>"illustration", :style =>"vertical-align:bottom;")%>
+            <p>
+                機器人開始了它尋找心臟的旅程。在路上遇，它遇到了一個穿著白袍的人，問怎樣才能找到新心臟。醫生回答它說：「要等待另一個人捐贈器官」，機器人繼續問：「什麼是器官捐贈？」，醫生回答：<br><br>
+                「器官捐贈與移植是現代醫學最大的進步！<br>
+                當一個人在生前表達個人意願，或家屬的同意，願意在其死後，將可用的器官捐贈給需要的人，醫生便能評估器官的狀況，在黃金時間內找到合適的移植者，進行移植手術，讓一個人的逝去，延續另一個人的生命。」<br><br>
+                在機器人似懂非懂的點點頭後，醫生建議了機器人到「台灣醫院」詢問細節。
+            </p>
+        </div>
         <button class="bt1 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
 
@@ -100,12 +104,17 @@
     <section class="section" id="section2">
         <%= image_tag('Organs_bone.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>哪些器官可以捐贈呢？心臟可以嗎？！</strong></h1><br><br>
-            <h2>
-                依據法規，可以移植的器官包括：心臟、肝臟、腎臟、肺臟、胰臟、小腸、骨骼、眼角膜及其他經中央衛生主管機關指定之類目，所以1個捐贈者，就可能改變8個人的生命！<br><br>
-                目前多數器官的捐贈者，多為車禍並經腦死宣判者，在腦死的狀態下，身體機能會維持一段時間才停止。在這個時間點，我們可以選擇讓時間關閉一個一個器官，也可以選擇移植器官、救活他人，當然一切的前提都是死者與家屬的同意才得以進行。
-            </h2>
+            <h1>&nbsp&nbsp&nbsp<strong>哪些器官可以捐贈呢？心臟可以嗎？！</strong></h1><br>
         </hgroup>
+        <div class="content-wrapper inline">
+            <p class="content">
+                機器人來到了「台灣醫院」，找到了「器官捐贈部門」裡一位穿著白袍、戴著白帽的如同天使的人，害羞的問了：「在這裡可以找到我需要的器官嗎？」，護士回答：「只有特定的器官才能被捐贈哦！」機器人就問了：「哪些器官可以捐贈呢？心臟可以嗎！？」，護士回答：<br><br>
+                「依據法規，可以移植的器官包括：心臟、肝臟、腎臟、肺臟、胰臟、小腸、骨骼、眼角膜及其他經中央衛生主管機關指定之類目，所以1個捐贈者，就可能改變8個人的生命！」<br><br>
+                「目前多數器官的捐贈者，多為車禍並經腦死宣判者，在腦死的狀態下，身體機能會維持一段時間才停止。在這個時間點，我們可以選擇讓時間關閉一個一個器官，也可以選擇移植器官、救活他人，當然一切的前提都是死者與家屬的同意才得以進行。」<br><br>
+                解釋後，護士給了機器人一張表單，告訴他填寫完就會在等候器官移植列表上了。
+            </p>
+            <%= image_tag('tm_4.svg', :id => "introimg4", :class =>"illustration", :style =>"vertical-align:bottom;")%>
+        </div>
         <button class="bt2 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt2 folding folded">
@@ -123,13 +132,14 @@
     <section class="section" id="section3">
         <%= image_tag('Organs_intestine.png', :class => "icon")%>
         <hgroup >
-            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1>
+            <h1>&nbsp&nbsp&nbsp<strong>除了意外腦死，還有其他情況允許捐贈器官嗎？</strong></h1><br>
         </hgroup>
-        <div class="content-wrapper">
-            <p>
-                少數器官可以「活體捐贈」。<br><br>
-                比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。<br><br>
-                在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。
+        <div class="content-wrapper inline">
+        <%= image_tag('tm_3.svg', :id => "introimg3", :class =>"illustration", :style =>"vertical-align:bottom;")%>
+            <p class="content">
+                在旁邊填寫器官移植等候登錄單時，一個人走到了機器人原先站的地方，跟護士說：「我要捐贈器官給我哥哥」，機器人納悶的想一想：不是只有在意外發生腦死後，才能捐贈器官嗎？護士看它疑惑地搖了搖頭，便告訴機器人，除了腦死以外，某些器官可以活體捐贈哦<br><br>
+                「比如說每個人都擁有兩顆腎臟，捐出一顆，還可以維持足夠的生理功能；而肝臟則是有再生能力，若切除部分捐出，保留肝臟體積的 35% 以上就足夠身體所需。」<br><br>
+                「在這樣的情況下，法律規定捐贈者必須年滿二十歲以上，同時也是受贈者的五親等血親或姻親；如果年齡未滿二十歲但已滿十八歲以上，必須經過衛生署專案審查過後才可以捐贈。在台灣，大多數等待不到肝臟/腎臟的移植者，也是在親屬之間找尋符合移植條件的對象。」
             </p>
         </div>
         <button class="bt3 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
@@ -149,15 +159,20 @@
     <section class="section inline" id="section4">
         <%= image_tag('Organs_kidney.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1>
+            <h1>&nbsp&nbsp&nbsp<strong>目前台灣有多少人在等待器官呢？</strong></h1><br>
         </hgroup>
         <div class="content-wrapper inline">
             <p class="content">
-                根據「財團法人器官捐贈移植登錄中心」的登記，<br>
-                截至103年5月止，共有8,466個在等待器官移植的人。<br><br>
-                每年都有數百人的增加。
+                機器人填寫完單子後，便坐在器官捐贈/移植部門外頭椅子坐了下來，等待器官的到來。機器人不用睡覺、也不用食物(除了偶爾上上機油)，於是它一坐，就是三天三夜。<br><br>
+                期間，機器人看到了許多人來來往往，有些人開心的擁抱彼此，有些人則難過沮喪的離開，不停地掉淚。有一個老爺爺，每天都會出來坐在機器人身邊，好像也在等待什麼。<br><br>
+                第三天，機器人忍不住問了老爺爺，在等待什麼。老爺爺說：「我的孫女肝臟出了問題，在等待一個捐贈的肝臟。我每天都來祈禱，希望今天會有配對成功的機會出現。」<br><br>
+                機器人問：「目前台灣有多少人在等待器官呢？」，老爺爺指了指眼前一個有著許多數字的電子看板，回答：<br><br>
+                「根據「財團法人器官捐贈移植登錄中心」的登記，<br>
+                截至103年5月止，共有8,466個在等待器官移植的人。」<br>
+                每年都有數百人的增加。<br><br>
+                機器人若有所思的看著那個數字，想起了幾天前那個說要捐贈器官給哥哥的人.....
             </p>
-            <div id="waiting-donut"></div>
+            <div id="waiting-donut" style="width:30%;"></div>
         </div>
         <button class="bt4 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
@@ -176,16 +191,18 @@
     <section class="section" id="section5">
         <%= image_tag('Organs_liver.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1>
+            <h1>&nbsp&nbsp&nbsp<strong>那麼整體而言，台灣的器官捐贈者多嗎？</strong></h1><br>
         </hgroup>
         <div class="content-wrapper">
             <p class="content">
-                台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！<br><br>
+                機器人又等待了三天三夜，在這幾天，機器人跟爺爺聊了更多關於器官捐贈的事，也去病床看了生病的小妹妹，才知道爺爺的孫女已經等待整整半年了，都還沒有等到捐贈的人。<br><br>
+                想起幾天前主動來表達捐贈器官意願的人，機器人問了爺爺，在台灣有多少人捐贈器官呢？爺爺回答：<br><br>
+                「台灣每年的器官捐贈者，都在100-200人上下(2013年：202人(a))，捐贈總器官/組織也不超過800個，還有8,000多人持續在長長的隊伍上等著。相比美國每年有117,000人等待器官、約30,000個器官成功移植的比例，台灣還有很大進步空間！」<br><br>
                 （圓餅圖：台灣 800/8,000 = 10%, 美國 30,000/117,000 = 25.6%）<br><br>
-                如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。<br><br>
+                「如果每一人都願意成為器官捐贈者，會有更多人能提早離開等待移植的清單。」<br><br>
                 數據：
                 a.
-                行政院衛生署
+                <br><br>
             </p>
             <div id="don-rate-chart"></div>
             <div id="don-history"></div>
@@ -207,14 +224,16 @@
     <section class="section" id="section6">
         <%= image_tag('Organs_lung.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>如果成為「器官捐贈者」我要付出什麼代價嗎？</strong></h1><br><br>
-            <h2>
-                代價：沒有！<br><br>
+            <h1>&nbsp&nbsp&nbsp<strong>如果成為「器官捐贈者」我要付出什麼代價嗎？</strong></h1><br>
+        </hgroup>
+        <div class="content-wrapper">
+            <p class="content">
+                機器人在聽完爺爺的回答後，主動跑去問了護士，是不是成為器官捐贈者要付出什麼代價，所以大家才不願意成為器官捐贈者？<br><br>護士回答：<br><br>
+                「代價：沒有！」<br><br>
                 多數人得以健康活到終老，僅有少數人意外腦死，在器官良好的狀態下，醫院才會徵詢家屬捐贈的可能性。醫院也不會放棄搶救任何一個「器官捐贈者」！醫院提供一樣的醫療服務，以搶救生命為優先。器官捐贈是無條件且無償的捐贈，所有醫療及相關費用將由全民健保給付，捐贈者家屬不需額外負擔任何費用。<br><br>
                 所以成為一個「器官捐贈者」，無損亦無償，但所捐贈的器官，卻能成為另一人生命中的無價之寶。
-            <br></br>
-            </h2>
-        </hgroup>
+            </p>
+        </div>
         <button class="bt6 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt6 folding folded">
@@ -232,12 +251,18 @@
     <section class="section" id="section7">
         <%= image_tag('Organs_pancreas.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>有器官了！身為「符合條件的移植者」我該做什麼？</strong></h1><br><br>
-            <h2>
-                當有器官捐贈時，醫院將會比對資料後通報第一批符合的人選，讓他們有心理準備可能即將有一場移植手術。在醫院完成詳細比對後，將通報最佳合適人選，確認移植意願後，便開始一場移植手術。<br><br>
-                手術時間因人而異，以肝臟來說，一場移植手術平均約進行 10 小時。手術後移植者還不能出院，必須住院觀察數週，出院後仍須定期追蹤器官狀況。
-            </h2>
+            <h1>&nbsp&nbsp&nbsp<strong>有器官了！身為「符合條件的移植者」我該做什麼？</strong></h1><br>
         </hgroup>
+        <div class="content-wrapper inline">
+        <%= image_tag('tm_6.svg', :id => "introimg6", :style =>"vertical-align:bottom; width:400px;")%>
+            <p class="content">
+                一天一天的過去了，機器人不再坐在椅子上等待，它開始環遊全台灣，告訴大家，成為一個器官志願捐贈者的重要性，希望能夠幫爺爺的孫女找到一顆合適的肝臟......<br><br>
+                終於....在千辛萬苦奔波之下，小妹妹終於配對成功了！機器人趕緊跑去醫院詢問護士，身為「符合條件的移植者」該做什麼？護士微笑的回答機器人：<br><br>
+                「當有器官捐贈時，醫院將會比對資料後通報第一批符合的人選，讓他們有心理準備可能即將有一場移植手術。在醫院完成詳細比對後，將通報最佳合適人選，確認移植意願後，便開始一場移植手術。」<br><br>
+                「手術時間因人而異，以肝臟來說，一場移植手術平均約進行 10 小時。手術後移植者還不能出院，必須住院觀察數週，出院後仍須定期追蹤器官狀況。」<br><br>
+                小妹妹即將進入手術房。
+            </p>
+        </div>
         <button class="bt7 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt7 folding folded">
@@ -255,12 +280,17 @@
     <section class="section" id="section8">
         <%= image_tag('Organs_skin.png', :class => "icon")%>
         <hgroup>
-            <h1>&nbsp&nbsp&nbsp<strong>完成器官捐贈/移植了！在結束手術之後......</strong></h1><br><br>
-            <h2>
-                完成捐贈/移植後，捐贈者與移植者均需住院修養一陣子，等待復原後，兩人生活即可恢復如常。<br><br>
-                但移植者由於本身的免疫效果，身體將會去排斥來自捐贈者的那顆器官，輕重程度因人而異，往往還是要吃藥來減低排斥，但是比照移植前的生死攸關，他們的生命已獲得改善。
-            </h2>
+            <h1>&nbsp&nbsp&nbsp<strong>完成器官捐贈/移植了！在結束手術之後......</strong></h1><br>
         </hgroup>
+        <div class="content-wrapper inline">
+            <p class="content">
+                在十個小時的漫長等待之後，手術終於成功了！機器人也從護士口中得知：<br><br>
+                「完成捐贈/移植後，捐贈者與移植者均需住院修養一陣子，等待復原後，兩人生活即可恢復如常。」<br><br>
+                「但移植者由於本身的免疫效果，身體將會去排斥來自捐贈者的那顆器官，輕重程度因人而異，往往還是要吃藥來減低排斥，但是比照移植前的生死攸關，他們的生命已獲得改善。」<br><br>
+                而更神奇的是......在聽到小妹妹康復後口中的那聲「謝謝！」之後，機器人原先那顆衰老敗壞的心臟，也如同重獲了新生，再度跳動了起來，讓機器人又獲得了更多的等待時間。不久之後，機器人也配對到了一顆健康的心臟，延續它在這世界，推廣器官捐贈的使命人生。
+            </p>
+            <%= image_tag('tm_5.svg', :id => "introimg5", :class =>"illustration", :style =>"vertical-align:bottom;")%>
+        </div>
         <button class="bt8 connect">&nbsp&nbsp器而不捨&nbsp&nbsp</button>
     </section>
     <ul class="qt8 folding folded">
