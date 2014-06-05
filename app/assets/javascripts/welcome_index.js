@@ -82,7 +82,11 @@
 
 
         var toduration = 1500;
-        $('.qt1').find('.answer').on('click', function() {
+        $('.answer').on('click', function() {
+            var $this = $(this);
+            var className = $this.parents('ul.folding').attr('class');
+            var curIdx = getQuestionIndex(className);
+
             if ($(this).hasClass('correct')) {
                 var notify = humane.create({
                     timeout: toduration,
@@ -93,9 +97,17 @@
                     "background": "rgba(84, 173, 71, 0.93)"
                 });
                 setTimeout(function() {
-                    $('.qt1').addClass('folded');
-                    $('.qt1').find('.correct').removeClass('btn-warning').addClass('btn-default');
+                    $('.qt' + curIdx).addClass('folded');
+                    $('.qt' + curIdx).find('.correct').removeClass('btn-warning').addClass('btn-default');
                 }, toduration + 500);
+
+                var $tinmanbox = $('.tinmanbox');
+                var $curIcon = $tinmanbox.find('a[href=#section' + curIdx + '] .icon');
+                if (!$tinmanbox.hasClass('show')) {
+                    $('#tinman').click();
+                }
+                $curIcon.addClass('answered');
+
             } else {
                 var notify = humane.create({
                     timeout: toduration,
@@ -106,7 +118,7 @@
                     "background": "rgba(196, 57, 57, 0.93)"
                 });
                 setTimeout(function() {
-                    $('.qt1').find('.wrong').removeClass('btn-warning').addClass('btn-default');
+                    $('.qt' + curIdx).find('.wrong').removeClass('btn-warning').addClass('btn-default');
                 }, toduration);
 
             };
@@ -115,26 +127,28 @@
         $('.tinmanbox').css('left', -$('.tinmanbox').outerWidth());
         $('#tinman').click(function() {
             console.log('333');
-            $('.tinmanbox').animate({
-                left: parseInt($('.tinmanbox').css('left'), 10) == 0 ? -$('.tinmanbox').outerWidth() : 0
-            });
+            $('.tinmanbox')
+                .animate({
+                    left: parseInt($('.tinmanbox').css('left'), 10) == 0 ? -$('.tinmanbox').outerWidth() : 0
+                })
+                .toggleClass('show');
         });
 
-        //hide or show tinmanbox this.toggle();
-        //DOM element is not ready outside this function
+        // hide or show tinmanbox this.toggle();
+        // DOM element is not ready outside this function
         var img1Height = $("#introimg1").offset().top;
         var img2Height = $("#introimg2").offset().top;
         var img3Height = $("#introimg3").offset().top;
 
 
         // Eric
-        var robotDiv = $('#robot-div');
-        $('#take-action-btn').on('click', triggerTakeAction);
-        function triggerTakeAction(evt) {
-            robotDiv.animate({
-                'height': '300px',
-            });
-        };
+        // var robotDiv = $('#robot-div');
+        // $('#take-action-btn').on('click', triggerTakeAction);
+        // function triggerTakeAction(evt) {
+        //     robotDiv.animate({
+        //         'height': '300px',
+        //     });
+        // };
 
         /* Info Graphics */
         var donut = new DonutChart('waiting-donut');
@@ -151,6 +165,12 @@
 
     });
 })();
+
+function getQuestionIndex(className) {
+    console.log(className);
+    var qt = className.match(/qt\d/);
+    return parseInt(qt[0].slice(2));
+}
 
 function getCurrentWaitingData() {
     return [
