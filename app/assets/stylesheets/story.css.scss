@@ -170,8 +170,15 @@ $header-height: 150px;
                 font-size: 1.2em;
                 line-height: 1.3em;
                 blockquote {
-                    margin-bottom: 1em;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.5em;
                     text-align: justify;
+                }
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                    display: block;
                 }
             }
             .gradient {
