@@ -292,6 +292,7 @@ a {
  .answertext {
  	display: block;
     position: relative;
+    text-shadow:1px 1px #000;
     top: 26px;
     font-family:"CSong3HK-Medium";
     font-size: 30px;
