@@ -81,7 +81,7 @@
         });
 
 
-        var toduration = 2000;
+        var toduration = 1500;
         $('.qt1').find('.answer').on('click', function() {
             if ($(this).hasClass('correct')) {
                 var notify = humane.create({
@@ -98,7 +98,7 @@
                 }, toduration + 500);
             } else {
                 var notify = humane.create({
-                    timeout: 2000,
+                    timeout: toduration,
                     baseCls: 'humane-bigbox'
                 })
                 notify.log('（X）<br>答錯了，看清楚再好好作答哦～');
