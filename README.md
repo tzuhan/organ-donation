@@ -1,6 +1,14 @@
-CCSP Final Project - Organ Donation Promotion.
-==========
+##CCSP Final Project - Organ Donation Promotion.
 
-The final project of Cloud Computing-Based Service Design and Programming(CCSP).
+#Introduction:
 
-Created by erichoco, YoEugene and tzuhan
+   The final project of Cloud Computing-Based Service Design and Programming(CCSP).
+
+#Created by:
+
+   *erichoco (https://github.com/erichoco)
+   
+   *YoEugene (https://github.com/YoEugene)
+   
+   and me.
+  
