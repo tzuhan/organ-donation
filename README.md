@@ -1,6 +1,6 @@
-ccsp-final
+CCSP Final Project - Organ Donation Promoting.
 ==========
 
-ccsp final ror version
+The final project of Cloud Computing-Based Service Design and Programming(CCSP).
 
-erichoco 
+Created by erichoco, YoEugene and tzuhan
