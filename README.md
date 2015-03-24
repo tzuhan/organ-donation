@@ -7,9 +7,9 @@ CCSP Final Project - Organ Donation Promotion.
 
 ###Created by:
 
-   *erichoco (https://github.com/erichoco)
+   * erichoco (https://github.com/erichoco)
    
-   *YoEugene (https://github.com/YoEugene)
+   * YoEugene (https://github.com/YoEugene)
    
    and me.
   
