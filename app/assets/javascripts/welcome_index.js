@@ -58,9 +58,7 @@
         $('.bt8').on("click", function() {
             $('.qt8').toggleClass('folded');
         });
-        $('.bt9').on("click", function() {
-            $('.qt9').toggleClass('folded');
-        });
+
 
         // If needed, unfold the list right away
         if (topElemOffset <= $(window).height() - foldingListHeight)
