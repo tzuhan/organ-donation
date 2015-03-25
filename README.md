@@ -11,7 +11,7 @@ CCSP Final Project - Organ Donation Promotion.
 
    * erichoco (https://github.com/erichoco)
    * YoEugene (https://github.com/YoEugene)
-   and me.
+   * Tzu-Han Hsu (https://github.com/tzuhan)
 
   
 ###Contribution:
